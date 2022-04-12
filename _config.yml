@@ -8,8 +8,8 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-url:              https://nicolas-hbt.github.io/test-educontokg/
-baseurl:          https://nicolas-hbt.github.io/test-educontokg/
+url:              https://nicolas-hbt.github.io/educ-ontokg/
+baseurl:          https://nicolas-hbt.github.io/educ-ontokg/
 
 author:
   name:           'Mark Otto'
@@ -21,4 +21,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/nicolas-hbt/test-educontokg
+  repo:           https://github.com/nicolas-hbt/educ-ontokg
