@@ -23,8 +23,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT ?major 
 WHERE {
-    VALUES ?class { ed:GeneralMajor ed:TechnologicalMajor } 
-    ?major rdf:type ?class.
+    ?major rdf:type/rdfs:subClassOf* ed:HighSchoolMajor.
     curriculum:lg_cs ed:recommendsHighSchoolMajor ?major .
 }
 </pre>
