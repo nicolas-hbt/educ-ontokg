@@ -1,0 +1,571 @@
+<http://erpi.fr/educonto/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://erpi.fr/educonto/> <http://www.w3.org/2002/07/owl#versionIRI> <http://erpi.fr/educonto/1.0.0> .
+<http://erpi.fr/educonto/> <http://purl.org/dc/elements/1.1/contributor> "Armelle Brun, LORIA, University of Lorraine, France" .
+<http://erpi.fr/educonto/> <http://purl.org/dc/elements/1.1/contributor> "Davy Monticolo, ERPI, University of Lorraine, France" .
+<http://erpi.fr/educonto/> <http://purl.org/dc/elements/1.1/contributor> "Pierre Monnin, Orange, France" .
+<http://erpi.fr/educonto/> <http://purl.org/dc/elements/1.1/created> "2022-03-05" .
+<http://erpi.fr/educonto/> <http://purl.org/dc/elements/1.1/creator> "Nicolas Hubert, ERPI, LORIA, University of Lorraine, France" .
+<http://erpi.fr/educonto/> <http://purl.org/dc/elements/1.1/language> "English" .
+<http://erpi.fr/educonto/> <http://purl.org/dc/elements/1.1/license> "Licensed under the Apache License, Version 2.0" .
+<http://erpi.fr/educonto/> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for modelling higher education curricula and students' profiles" .
+<http://erpi.fr/educonto/> <http://www.w3.org/2000/01/rdf-schema#label> "EducOnto: an Ontology for Education"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/onto/Curriculum> .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/onto/HighSchoolMajor> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://erpi.fr/educonto/belongsToFieldOfStudy
+<http://erpi.fr/educonto/belongsToFieldOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/belongsToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/belongsToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/belongsToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/FieldOfStudy> .
+# 
+# http://erpi.fr/educonto/curriculumRelatesToKeyword
+<http://erpi.fr/educonto/curriculumRelatesToKeyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/curriculumRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/curriculumRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/curriculumRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Keyword> .
+# 
+# http://erpi.fr/educonto/dislikedCurriculum
+<http://erpi.fr/educonto/dislikedCurriculum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/dislikedCurriculum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erpi.fr/educonto/followedCurriculum> .
+<http://erpi.fr/educonto/dislikedCurriculum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/UndergraduateStudent> .
+<http://erpi.fr/educonto/dislikedCurriculum> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Curriculum> .
+# 
+# http://erpi.fr/educonto/dislikedHighSchoolSpecialty
+<http://erpi.fr/educonto/dislikedHighSchoolSpecialty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/dislikedHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/dislikedHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/dislikedHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/HighSchoolSpecialty> .
+# 
+# http://erpi.fr/educonto/dislikedTechnologicalMajor
+<http://erpi.fr/educonto/dislikedTechnologicalMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/dislikedTechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/dislikedTechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/dislikedTechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/TechnologicalMajor> .
+# 
+# http://erpi.fr/educonto/followedCurriculum
+<http://erpi.fr/educonto/followedCurriculum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/followedCurriculum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erpi.fr/educonto/mentionedCurriculum> .
+<http://erpi.fr/educonto/followedCurriculum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/UndergraduateStudent> .
+<http://erpi.fr/educonto/followedCurriculum> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/followedCurriculum> <http://www.w3.org/2000/01/rdf-schema#comment> "University curriculum a student is following or has followed recently"@en .
+# 
+# http://erpi.fr/educonto/hasFavoriteSchoolSubject
+<http://erpi.fr/educonto/hasFavoriteSchoolSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/hasFavoriteSchoolSubject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/hasFavoriteSchoolSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/hasFavoriteSchoolSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/SchoolSubject> .
+# 
+# http://erpi.fr/educonto/hasMainTopic
+<http://erpi.fr/educonto/hasMainTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/hasMainTopic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/hasMainTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/HighSchoolMajor> .
+<http://erpi.fr/educonto/hasMainTopic> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/SchoolSubject> .
+# 
+# http://erpi.fr/educonto/hasPersonalityTrait
+<http://erpi.fr/educonto/hasPersonalityTrait> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/hasPersonalityTrait> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/hasPersonalityTrait> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/hasPersonalityTrait> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/PersonalityTrait> .
+# 
+# http://erpi.fr/educonto/hasSkill
+<http://erpi.fr/educonto/hasSkill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/hasSkill> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/hasSkill> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/hasSkill> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/AcademicSkill> .
+# 
+# http://erpi.fr/educonto/isInterestedInKeyword
+<http://erpi.fr/educonto/isInterestedInKeyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/isInterestedInKeyword> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/isInterestedInKeyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/isInterestedInKeyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Keyword> .
+# 
+# http://erpi.fr/educonto/keywordRelatesToFieldOfStudy
+<http://erpi.fr/educonto/keywordRelatesToFieldOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/keywordRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/keywordRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Keyword> .
+<http://erpi.fr/educonto/keywordRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/FieldOfStudy> .
+# 
+# http://erpi.fr/educonto/keywordRelatesToSubject
+<http://erpi.fr/educonto/keywordRelatesToSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/keywordRelatesToSubject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/keywordRelatesToSubject> <http://www.w3.org/2002/07/owl#inverseOf> <http://erpi.fr/educonto/subjectRelatesToKeyword> .
+<http://erpi.fr/educonto/keywordRelatesToSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Keyword> .
+<http://erpi.fr/educonto/keywordRelatesToSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/SchoolSubject> .
+# 
+# http://erpi.fr/educonto/likedCurriculum
+<http://erpi.fr/educonto/likedCurriculum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/likedCurriculum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://erpi.fr/educonto/followedCurriculum> .
+<http://erpi.fr/educonto/likedCurriculum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/UndergraduateStudent> .
+<http://erpi.fr/educonto/likedCurriculum> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Curriculum> .
+# 
+# http://erpi.fr/educonto/likedHighSchoolSpecialty
+<http://erpi.fr/educonto/likedHighSchoolSpecialty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/likedHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/likedHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/likedHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/HighSchoolSpecialty> .
+# 
+# http://erpi.fr/educonto/likedTechnologicalMajor
+<http://erpi.fr/educonto/likedTechnologicalMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/likedTechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/likedTechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/likedTechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/TechnologicalMajor> .
+# 
+# http://erpi.fr/educonto/majorRelatesToFieldOfStudy
+<http://erpi.fr/educonto/majorRelatesToFieldOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/majorRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/majorRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/HighSchoolMajor> .
+<http://erpi.fr/educonto/majorRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/FieldOfStudy> .
+# 
+# http://erpi.fr/educonto/majorRelatesToKeyword
+<http://erpi.fr/educonto/majorRelatesToKeyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/majorRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/majorRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/HighSchoolMajor> .
+<http://erpi.fr/educonto/majorRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Keyword> .
+# 
+# http://erpi.fr/educonto/mentionedCurriculum
+<http://erpi.fr/educonto/mentionedCurriculum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/mentionedCurriculum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/mentionedCurriculum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/mentionedCurriculum> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/mentionedCurriculum> <http://www.w3.org/2000/01/rdf-schema#comment> "Curriculum mentioned by a student as an alternative or as a possible choice for future studies"@en .
+# 
+# http://erpi.fr/educonto/pickedGeneralMajor
+<http://erpi.fr/educonto/pickedGeneralMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/pickedGeneralMajor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/pickedGeneralMajor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/pickedGeneralMajor> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/GeneralMajor> .
+# 
+# http://erpi.fr/educonto/recommendsHighSchoolMajor
+<http://erpi.fr/educonto/recommendsHighSchoolMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/recommendsHighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/recommendsHighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/recommendsHighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/HighSchoolMajor> .
+# 
+# http://erpi.fr/educonto/recommendsHighSchoolSpecialty
+<http://erpi.fr/educonto/recommendsHighSchoolSpecialty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/recommendsHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/recommendsHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/recommendsHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/HighSchoolSpecialty> .
+# 
+# http://erpi.fr/educonto/requiresHighSchoolMajor
+<http://erpi.fr/educonto/requiresHighSchoolMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/requiresHighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/requiresHighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/requiresHighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/HighSchoolMajor> .
+# 
+# http://erpi.fr/educonto/requiresHighSchoolSpecialty
+<http://erpi.fr/educonto/requiresHighSchoolSpecialty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/requiresHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/requiresHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/requiresHighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/HighSchoolSpecialty> .
+# 
+# http://erpi.fr/educonto/specialtyPairContains
+<http://erpi.fr/educonto/specialtyPairContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/specialtyPairContains> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/specialtyPairContains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/GeneralMajor> .
+<http://erpi.fr/educonto/specialtyPairContains> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/HighSchoolSpecialty> .
+# 
+# http://erpi.fr/educonto/specialtyRelatesToFieldOfStudy
+<http://erpi.fr/educonto/specialtyRelatesToFieldOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/specialtyRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/specialtyRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/HighSchoolSpecialty> .
+<http://erpi.fr/educonto/specialtyRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/FieldOfStudy> .
+# 
+# http://erpi.fr/educonto/specialtyRelatesToKeyword
+<http://erpi.fr/educonto/specialtyRelatesToKeyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/specialtyRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/specialtyRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/HighSchoolSpecialty> .
+<http://erpi.fr/educonto/specialtyRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Keyword> .
+# 
+# http://erpi.fr/educonto/subjectRelatesToFieldOfStudy
+<http://erpi.fr/educonto/subjectRelatesToFieldOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/subjectRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/subjectRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/SchoolSubject> .
+<http://erpi.fr/educonto/subjectRelatesToFieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/FieldOfStudy> .
+# 
+# http://erpi.fr/educonto/subjectRelatesToKeyword
+<http://erpi.fr/educonto/subjectRelatesToKeyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://erpi.fr/educonto/subjectRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://erpi.fr/educonto/subjectRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://erpi.fr/educonto/SchoolSubject> .
+<http://erpi.fr/educonto/subjectRelatesToKeyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://erpi.fr/educonto/Keyword> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://erpi.fr/educonto/AcademicSkill
+<http://erpi.fr/educonto/AcademicSkill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/AcademicSkill> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/AcademicSkill> <http://www.w3.org/2000/01/rdf-schema#comment> "Skills that a student possesses"@en .
+<http://erpi.fr/educonto/AcademicSkill> <http://www.w3.org/2000/01/rdf-schema#label> "Academic Skill"@en .
+# 
+# http://erpi.fr/educonto/AdvancedTechnicianCertificate
+<http://erpi.fr/educonto/AdvancedTechnicianCertificate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/AdvancedTechnicianCertificate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/ShortStudies> .
+<http://erpi.fr/educonto/AdvancedTechnicianCertificate> <http://www.w3.org/2000/01/rdf-schema#label> "Advanced Technician Certificate"@en .
+<http://erpi.fr/educonto/AdvancedTechnicianCertificate> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur"@en .
+# 
+# http://erpi.fr/educonto/AgricultureAgronomyEnvironmentAtc
+<http://erpi.fr/educonto/AgricultureAgronomyEnvironmentAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/AgricultureAgronomyEnvironmentAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/AgricultureAgronomyEnvironmentVocational
+<http://erpi.fr/educonto/AgricultureAgronomyEnvironmentVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/AgricultureAgronomyEnvironmentVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/ArtAudiovisualDesignAtc
+<http://erpi.fr/educonto/ArtAudiovisualDesignAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ArtAudiovisualDesignAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/ArtAudiovisualDesignGeneralBachelor
+<http://erpi.fr/educonto/ArtAudiovisualDesignGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ArtAudiovisualDesignGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/GeneralBachelor> .
+# 
+# http://erpi.fr/educonto/ArtAudiovisualDesignSchool
+<http://erpi.fr/educonto/ArtAudiovisualDesignSchool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ArtAudiovisualDesignSchool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/School> .
+# 
+# http://erpi.fr/educonto/ArtAudiovisualDesignVocational
+<http://erpi.fr/educonto/ArtAudiovisualDesignVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ArtAudiovisualDesignVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/AutomationConstructionMechanicAtc
+<http://erpi.fr/educonto/AutomationConstructionMechanicAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/AutomationConstructionMechanicAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/AutomationConstructionMechanicVocational
+<http://erpi.fr/educonto/AutomationConstructionMechanicVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/AutomationConstructionMechanicVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/Bachelor
+<http://erpi.fr/educonto/Bachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/Bachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/LongStudies> .
+<http://erpi.fr/educonto/Bachelor> <http://www.w3.org/2000/01/rdf-schema#label> "Bachelor's Degree"@en .
+<http://erpi.fr/educonto/Bachelor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Bachelor%27s_degree"@en .
+# 
+# http://erpi.fr/educonto/BiologyChemistryAtc
+<http://erpi.fr/educonto/BiologyChemistryAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BiologyChemistryAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/BiologyChemistryTechnologicalBachelor
+<http://erpi.fr/educonto/BiologyChemistryTechnologicalBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BiologyChemistryTechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Industry> .
+# 
+# http://erpi.fr/educonto/BiologyChemistryVocational
+<http://erpi.fr/educonto/BiologyChemistryVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BiologyChemistryVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/BusinessEconomyManagementAtc
+<http://erpi.fr/educonto/BusinessEconomyManagementAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BusinessEconomyManagementAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/BusinessEconomyManagementCpge
+<http://erpi.fr/educonto/BusinessEconomyManagementCpge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BusinessEconomyManagementCpge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Cpge> .
+<http://erpi.fr/educonto/BusinessEconomyManagementCpge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Economics_CPGE"@en .
+# 
+# http://erpi.fr/educonto/BusinessEconomyManagementGeneralBachelor
+<http://erpi.fr/educonto/BusinessEconomyManagementGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BusinessEconomyManagementGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/GeneralBachelor> .
+# 
+# http://erpi.fr/educonto/BusinessEconomyManagementSchool
+<http://erpi.fr/educonto/BusinessEconomyManagementSchool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BusinessEconomyManagementSchool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/School> .
+# 
+# http://erpi.fr/educonto/BusinessEconomyManagementTechnologicalBachelor
+<http://erpi.fr/educonto/BusinessEconomyManagementTechnologicalBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BusinessEconomyManagementTechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Tertiary> .
+# 
+# http://erpi.fr/educonto/BusinessEconomyManagementVocational
+<http://erpi.fr/educonto/BusinessEconomyManagementVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/BusinessEconomyManagementVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/CateringHospitalityTourismAtc
+<http://erpi.fr/educonto/CateringHospitalityTourismAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/CateringHospitalityTourismAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/CateringHospitalityTourismVocational
+<http://erpi.fr/educonto/CateringHospitalityTourismVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/CateringHospitalityTourismVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/ComputerScienceAtc
+<http://erpi.fr/educonto/ComputerScienceAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ComputerScienceAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/ComputerScienceMathematicsGeneralBachelor
+<http://erpi.fr/educonto/ComputerScienceMathematicsGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ComputerScienceMathematicsGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/SciencesGeneralBachelor> .
+# 
+# http://erpi.fr/educonto/ComputerScienceTechnologicalBachelor
+<http://erpi.fr/educonto/ComputerScienceTechnologicalBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ComputerScienceTechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Industry> .
+# 
+# http://erpi.fr/educonto/ComputerScienceVocational
+<http://erpi.fr/educonto/ComputerScienceVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ComputerScienceVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/Cpge
+<http://erpi.fr/educonto/Cpge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/Cpge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/PreparatoryClass> .
+<http://erpi.fr/educonto/Cpge> <http://www.w3.org/2000/01/rdf-schema#label> "Higher School Preparatory Classes"@en .
+<http://erpi.fr/educonto/Cpge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles"@en .
+# 
+# http://erpi.fr/educonto/Curriculum
+<http://erpi.fr/educonto/Curriculum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/Curriculum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/Curriculum> <http://www.w3.org/2000/01/rdf-schema#label> "University Curriculum"@en .
+# 
+# http://erpi.fr/educonto/DualBachelor
+<http://erpi.fr/educonto/DualBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/DualBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Bachelor> .
+<http://erpi.fr/educonto/DualBachelor> <http://www.w3.org/2000/01/rdf-schema#label> "Dual Bachelor's Degree"@en .
+<http://erpi.fr/educonto/DualBachelor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Double_degree"@en .
+# 
+# http://erpi.fr/educonto/EngineeringAtc
+<http://erpi.fr/educonto/EngineeringAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/EngineeringAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/EngineeringGeneralBachelor
+<http://erpi.fr/educonto/EngineeringGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/EngineeringGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/SciencesGeneralBachelor> .
+# 
+# http://erpi.fr/educonto/EngineeringScienceCpge
+<http://erpi.fr/educonto/EngineeringScienceCpge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/EngineeringScienceCpge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Cpge> .
+<http://erpi.fr/educonto/EngineeringScienceCpge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE"@en .
+# 
+# http://erpi.fr/educonto/EngineeringScienceSchool
+<http://erpi.fr/educonto/EngineeringScienceSchool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/EngineeringScienceSchool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/School> .
+# 
+# http://erpi.fr/educonto/EngineeringTechnologicalBachelor
+<http://erpi.fr/educonto/EngineeringTechnologicalBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/EngineeringTechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Industry> .
+# 
+# http://erpi.fr/educonto/EngineeringVocational
+<http://erpi.fr/educonto/EngineeringVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/EngineeringVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/FieldOfStudy
+<http://erpi.fr/educonto/FieldOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/FieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/FieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#label> "Field of Study"@en .
+# 
+# http://erpi.fr/educonto/GeneralBachelor
+<http://erpi.fr/educonto/GeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/GeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Bachelor> .
+<http://erpi.fr/educonto/GeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#label> "General Bachelor's Degree"@en .
+<http://erpi.fr/educonto/GeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Bachelor%27s_degree"@en .
+# 
+# http://erpi.fr/educonto/GeneralMajor
+<http://erpi.fr/educonto/GeneralMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/GeneralMajor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/HighSchoolMajor> .
+<http://erpi.fr/educonto/GeneralMajor> <http://www.w3.org/2000/01/rdf-schema#comment> "Chosen major for general high school seniors. Can be either of the following options: a broad subject area (economics, literature or sciences), or a combination of two high school specialty among thirteen possibilities"@en .
+<http://erpi.fr/educonto/GeneralMajor> <http://www.w3.org/2000/01/rdf-schema#label> "General Major"@en .
+<http://erpi.fr/educonto/GeneralMajor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Baccalaur%C3%A9at#Baccalaur%C3%A9at_g%C3%A9n%C3%A9ral"@en .
+# 
+# http://erpi.fr/educonto/HealthGeneralBachelor
+<http://erpi.fr/educonto/HealthGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/HealthGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/SciencesGeneralBachelor> .
+# 
+# http://erpi.fr/educonto/HighSchoolMajor
+<http://erpi.fr/educonto/HighSchoolMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/HighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/HighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#comment> "Chosen major in high school"@en .
+<http://erpi.fr/educonto/HighSchoolMajor> <http://www.w3.org/2000/01/rdf-schema#label> "High school Major"@en .
+# 
+# http://erpi.fr/educonto/HighSchoolSenior
+<http://erpi.fr/educonto/HighSchoolSenior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/HighSchoolSenior> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/HighSchoolSenior> <http://www.w3.org/2000/01/rdf-schema#comment> "Student in last year of high school"@en .
+<http://erpi.fr/educonto/HighSchoolSenior> <http://www.w3.org/2000/01/rdf-schema#label> "High School Senior"@en .
+# 
+# http://erpi.fr/educonto/HighSchoolSpecialty
+<http://erpi.fr/educonto/HighSchoolSpecialty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/HighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/HighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#label> "High school Specialty"@en .
+<http://erpi.fr/educonto/HighSchoolSpecialty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://fr.wikipedia.org/wiki/Enseignement_de_sp%C3%A9cialit%C3%A9" .
+# 
+# http://erpi.fr/educonto/HumanitiesCpge
+<http://erpi.fr/educonto/HumanitiesCpge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/HumanitiesCpge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Cpge> .
+<http://erpi.fr/educonto/HumanitiesCpge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Literary_and_humanities_CPGE"@en .
+# 
+# http://erpi.fr/educonto/HumanitiesGeneralBachelor
+<http://erpi.fr/educonto/HumanitiesGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/HumanitiesGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/GeneralBachelor> .
+# 
+# http://erpi.fr/educonto/HumanitiesVocational
+<http://erpi.fr/educonto/HumanitiesVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/HumanitiesVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/Industry
+<http://erpi.fr/educonto/Industry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/Industry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/TechnologicalBachelor> .
+# 
+# http://erpi.fr/educonto/InformationCommunicationSchool
+<http://erpi.fr/educonto/InformationCommunicationSchool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/InformationCommunicationSchool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/School> .
+# 
+# http://erpi.fr/educonto/IntegratedPreparatoryClass
+<http://erpi.fr/educonto/IntegratedPreparatoryClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/IntegratedPreparatoryClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/PreparatoryClass> .
+<http://erpi.fr/educonto/IntegratedPreparatoryClass> <http://www.w3.org/2000/01/rdf-schema#label> "Integrated Preparatory Classes"@en .
+<http://erpi.fr/educonto/IntegratedPreparatoryClass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://ecpm.unistra.fr/en/academics/integrated-preparatory-cycle/"@en .
+<http://erpi.fr/educonto/IntegratedPreparatoryClass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://polytech-nancy.univ-lorraine.fr/en/programmes/2-year-preparatory-cycle"@en .
+# 
+# http://erpi.fr/educonto/Keyword
+<http://erpi.fr/educonto/Keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/Keyword> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/Keyword> <http://www.w3.org/2000/01/rdf-schema#comment> "Can be linked to student and seen as a center of interest. Can be linked to university curricula and high school majors and be seen as a descriptive feature"@en .
+<http://erpi.fr/educonto/Keyword> <http://www.w3.org/2000/01/rdf-schema#label> "Keyword"@en .
+# 
+# http://erpi.fr/educonto/LawPoliticsGeneralBachelor
+<http://erpi.fr/educonto/LawPoliticsGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/LawPoliticsGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/GeneralBachelor> .
+# 
+# http://erpi.fr/educonto/LawPoliticsTechnologicalBachelor
+<http://erpi.fr/educonto/LawPoliticsTechnologicalBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/LawPoliticsTechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Tertiary> .
+# 
+# http://erpi.fr/educonto/LawPoliticsVocational
+<http://erpi.fr/educonto/LawPoliticsVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/LawPoliticsVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/LongStudies
+<http://erpi.fr/educonto/LongStudies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/LongStudies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/LongStudies> <http://www.w3.org/2000/01/rdf-schema#comment> "Includes university curricula leading to long-term studies"@en .
+<http://erpi.fr/educonto/LongStudies> <http://www.w3.org/2000/01/rdf-schema#label> "Long Studies"@en .
+# 
+# http://erpi.fr/educonto/NaturalScienceGeneralBachelor
+<http://erpi.fr/educonto/NaturalScienceGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/NaturalScienceGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/SciencesGeneralBachelor> .
+# 
+# http://erpi.fr/educonto/ParamedicalSchool
+<http://erpi.fr/educonto/ParamedicalSchool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ParamedicalSchool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/School> .
+# 
+# http://erpi.fr/educonto/ParamedicalSocialAtc
+<http://erpi.fr/educonto/ParamedicalSocialAtc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ParamedicalSocialAtc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/AdvancedTechnicianCertificate> .
+# 
+# http://erpi.fr/educonto/ParamedicalSocialVocational
+<http://erpi.fr/educonto/ParamedicalSocialVocational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ParamedicalSocialVocational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/VocationalBachelor> .
+# 
+# http://erpi.fr/educonto/ParamedicalTechnologicalBachelor
+<http://erpi.fr/educonto/ParamedicalTechnologicalBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ParamedicalTechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Tertiary> .
+# 
+# http://erpi.fr/educonto/Person
+<http://erpi.fr/educonto/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://erpi.fr/educonto/PersonalityTrait
+<http://erpi.fr/educonto/PersonalityTrait> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/PersonalityTrait> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/PersonalityTrait> <http://www.w3.org/2000/01/rdf-schema#comment> "Personality trait a student possesses"@en .
+<http://erpi.fr/educonto/PersonalityTrait> <http://www.w3.org/2000/01/rdf-schema#label> "Personality Trait"@en .
+# 
+# http://erpi.fr/educonto/PreparatoryClass
+<http://erpi.fr/educonto/PreparatoryClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/PreparatoryClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/LongStudies> .
+<http://erpi.fr/educonto/PreparatoryClass> <http://www.w3.org/2000/01/rdf-schema#label> "Preparatory Classes"@en .
+# 
+# http://erpi.fr/educonto/School
+<http://erpi.fr/educonto/School> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/School> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/LongStudies> .
+<http://erpi.fr/educonto/School> <http://www.w3.org/2000/01/rdf-schema#comment> "Higher education schools that are not part of university. Mainly includes private institutions"@en .
+<http://erpi.fr/educonto/School> <http://www.w3.org/2000/01/rdf-schema#label> "Higher Education School"@en .
+# 
+# http://erpi.fr/educonto/SchoolSubject
+<http://erpi.fr/educonto/SchoolSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/SchoolSubject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://erpi.fr/educonto/SchoolSubject> <http://www.w3.org/2000/01/rdf-schema#comment> "School subject taught at school"@en .
+<http://erpi.fr/educonto/SchoolSubject> <http://www.w3.org/2000/01/rdf-schema#label> "School Subject"@en .
+# 
+# http://erpi.fr/educonto/SciencesGeneralBachelor
+<http://erpi.fr/educonto/SciencesGeneralBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/SciencesGeneralBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/GeneralBachelor> .
+# 
+# http://erpi.fr/educonto/ShortStudies
+<http://erpi.fr/educonto/ShortStudies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/ShortStudies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Curriculum> .
+<http://erpi.fr/educonto/ShortStudies> <http://www.w3.org/2000/01/rdf-schema#comment> "Includes university curricula leading to short-term studies"@en .
+<http://erpi.fr/educonto/ShortStudies> <http://www.w3.org/2000/01/rdf-schema#label> "Short Studies"@en .
+# 
+# http://erpi.fr/educonto/TechnologicalBachelor
+<http://erpi.fr/educonto/TechnologicalBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/TechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Bachelor> .
+<http://erpi.fr/educonto/TechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#label> "Technological Bachelor's Degree"@en .
+<http://erpi.fr/educonto/TechnologicalBachelor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/University_Institutes_of_Technology"@en .
+# 
+# http://erpi.fr/educonto/TechnologicalMajor
+<http://erpi.fr/educonto/TechnologicalMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/TechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/HighSchoolMajor> .
+<http://erpi.fr/educonto/TechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#label> "Technological Major"@en .
+<http://erpi.fr/educonto/TechnologicalMajor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Baccalaur%C3%A9at_technologique#The_8_current_sections"@en .
+# 
+# http://erpi.fr/educonto/TechnologyCpge
+<http://erpi.fr/educonto/TechnologyCpge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/TechnologyCpge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Cpge> .
+<http://erpi.fr/educonto/TechnologyCpge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE"@en .
+# 
+# http://erpi.fr/educonto/Tertiary
+<http://erpi.fr/educonto/Tertiary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/Tertiary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/TechnologicalBachelor> .
+# 
+# http://erpi.fr/educonto/UndergraduateStudent
+<http://erpi.fr/educonto/UndergraduateStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/UndergraduateStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/Person> .
+<http://erpi.fr/educonto/UndergraduateStudent> <http://www.w3.org/2000/01/rdf-schema#label> "Undergraduate Student"@en .
+# 
+# http://erpi.fr/educonto/VocationalBachelor
+<http://erpi.fr/educonto/VocationalBachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://erpi.fr/educonto/VocationalBachelor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://erpi.fr/educonto/ShortStudies> .
+<http://erpi.fr/educonto/VocationalBachelor> <http://www.w3.org/2000/01/rdf-schema#label> "Vocational Bachelor's Degree"@en .
+<http://erpi.fr/educonto/VocationalBachelor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Vocational_university"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
