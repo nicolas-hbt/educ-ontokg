@@ -1,0 +1,671 @@
+@prefix : <http://erpi.fr/educonto/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://erpi.fr/educonto/> .
+
+<http://erpi.fr/educonto/> rdf:type owl:Ontology ;
+                            owl:versionIRI <http://erpi.fr/educonto/1.0.0> ;
+                            <http://purl.org/dc/elements/1.1/contributor> "Armelle Brun, LORIA, University of Lorraine, France" ,
+                                                                          "Davy Monticolo, ERPI, University of Lorraine, France" ,
+                                                                          "Pierre Monnin, Orange, France" ;
+                            <http://purl.org/dc/elements/1.1/created> "2022-03-05" ;
+                            <http://purl.org/dc/elements/1.1/creator> "Nicolas Hubert, ERPI, LORIA, University of Lorraine, France" ;
+                            <http://purl.org/dc/elements/1.1/language> "English" ;
+                            <http://purl.org/dc/elements/1.1/license> "Licensed under the Apache License, Version 2.0" ;
+                            rdfs:comment "An ontology for modelling higher education curricula and students' profiles" ;
+                            rdfs:label "EducOnto: an Ontology for Education"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdfs:range xsd:anyURI ;
+             rdfs:domain <http://erpi.fr/educonto/onto/Curriculum> ,
+                         <http://erpi.fr/educonto/onto/HighSchoolMajor> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://erpi.fr/educonto/belongsToFieldOfStudy
+:belongsToFieldOfStudy rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :Curriculum ;
+                       rdfs:range :FieldOfStudy .
+
+
+###  http://erpi.fr/educonto/curriculumRelatesToKeyword
+:curriculumRelatesToKeyword rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdfs:domain :Curriculum ;
+                            rdfs:range :Keyword .
+
+
+###  http://erpi.fr/educonto/dislikedCurriculum
+:dislikedCurriculum rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :followedCurriculum ;
+                    rdfs:domain :UndergraduateStudent ;
+                    rdfs:range :Curriculum .
+
+
+###  http://erpi.fr/educonto/dislikedHighSchoolSpecialty
+:dislikedHighSchoolSpecialty rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain :Person ;
+                             rdfs:range :HighSchoolSpecialty .
+
+
+###  http://erpi.fr/educonto/dislikedTechnologicalMajor
+:dislikedTechnologicalMajor rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdfs:domain :Person ;
+                            rdfs:range :TechnologicalMajor .
+
+
+###  http://erpi.fr/educonto/followedCurriculum
+:followedCurriculum rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :mentionedCurriculum ;
+                    rdfs:domain :UndergraduateStudent ;
+                    rdfs:range :Curriculum ;
+                    rdfs:comment "University curriculum a student is following or has followed recently"@en .
+
+
+###  http://erpi.fr/educonto/hasFavoriteSchoolSubject
+:hasFavoriteSchoolSubject rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain :Person ;
+                          rdfs:range :SchoolSubject .
+
+
+###  http://erpi.fr/educonto/hasMainTopic
+:hasMainTopic rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :HighSchoolMajor ;
+              rdfs:range :SchoolSubject .
+
+
+###  http://erpi.fr/educonto/hasPersonalityTrait
+:hasPersonalityTrait rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain :Person ;
+                     rdfs:range :PersonalityTrait .
+
+
+###  http://erpi.fr/educonto/hasSkill
+:hasSkill rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :AcademicSkill .
+
+
+###  http://erpi.fr/educonto/isInterestedInKeyword
+:isInterestedInKeyword rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :Person ;
+                       rdfs:range :Keyword .
+
+
+###  http://erpi.fr/educonto/keywordRelatesToFieldOfStudy
+:keywordRelatesToFieldOfStudy rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf owl:topObjectProperty ;
+                              rdfs:domain :Keyword ;
+                              rdfs:range :FieldOfStudy .
+
+
+###  http://erpi.fr/educonto/keywordRelatesToSubject
+:keywordRelatesToSubject rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         owl:inverseOf :subjectRelatesToKeyword ;
+                         rdfs:domain :Keyword ;
+                         rdfs:range :SchoolSubject .
+
+
+###  http://erpi.fr/educonto/likedCurriculum
+:likedCurriculum rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :followedCurriculum ;
+                 rdfs:domain :UndergraduateStudent ;
+                 rdfs:range :Curriculum .
+
+
+###  http://erpi.fr/educonto/likedHighSchoolSpecialty
+:likedHighSchoolSpecialty rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain :Person ;
+                          rdfs:range :HighSchoolSpecialty .
+
+
+###  http://erpi.fr/educonto/likedTechnologicalMajor
+:likedTechnologicalMajor rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :Person ;
+                         rdfs:range :TechnologicalMajor .
+
+
+###  http://erpi.fr/educonto/majorRelatesToFieldOfStudy
+:majorRelatesToFieldOfStudy rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdfs:domain :HighSchoolMajor ;
+                            rdfs:range :FieldOfStudy .
+
+
+###  http://erpi.fr/educonto/majorRelatesToKeyword
+:majorRelatesToKeyword rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :HighSchoolMajor ;
+                       rdfs:range :Keyword .
+
+
+###  http://erpi.fr/educonto/mentionedCurriculum
+:mentionedCurriculum rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain :Person ;
+                     rdfs:range :Curriculum ;
+                     rdfs:comment "Curriculum mentioned by a student as an alternative or as a possible choice for future studies"@en .
+
+
+###  http://erpi.fr/educonto/pickedGeneralMajor
+:pickedGeneralMajor rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain :Person ;
+                    rdfs:range :GeneralMajor .
+
+
+###  http://erpi.fr/educonto/recommendsHighSchoolMajor
+:recommendsHighSchoolMajor rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdfs:domain :Curriculum ;
+                           rdfs:range :HighSchoolMajor .
+
+
+###  http://erpi.fr/educonto/recommendsHighSchoolSpecialty
+:recommendsHighSchoolSpecialty rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain :Curriculum ;
+                               rdfs:range :HighSchoolSpecialty .
+
+
+###  http://erpi.fr/educonto/requiresHighSchoolMajor
+:requiresHighSchoolMajor rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :Curriculum ;
+                         rdfs:range :HighSchoolMajor .
+
+
+###  http://erpi.fr/educonto/requiresHighSchoolSpecialty
+:requiresHighSchoolSpecialty rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain :Curriculum ;
+                             rdfs:range :HighSchoolSpecialty .
+
+
+###  http://erpi.fr/educonto/specialtyPairContains
+:specialtyPairContains rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :GeneralMajor ;
+                       rdfs:range :HighSchoolSpecialty .
+
+
+###  http://erpi.fr/educonto/specialtyRelatesToFieldOfStudy
+:specialtyRelatesToFieldOfStudy rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                rdfs:domain :HighSchoolSpecialty ;
+                                rdfs:range :FieldOfStudy .
+
+
+###  http://erpi.fr/educonto/specialtyRelatesToKeyword
+:specialtyRelatesToKeyword rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdfs:domain :HighSchoolSpecialty ;
+                           rdfs:range :Keyword .
+
+
+###  http://erpi.fr/educonto/subjectRelatesToFieldOfStudy
+:subjectRelatesToFieldOfStudy rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf owl:topObjectProperty ;
+                              rdfs:domain :SchoolSubject ;
+                              rdfs:range :FieldOfStudy .
+
+
+###  http://erpi.fr/educonto/subjectRelatesToKeyword
+:subjectRelatesToKeyword rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :SchoolSubject ;
+                         rdfs:range :Keyword .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://erpi.fr/educonto/AcademicSkill
+:AcademicSkill rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
+               rdfs:comment "Skills that a student possesses"@en ;
+               rdfs:label "Academic Skill"@en .
+
+
+###  http://erpi.fr/educonto/AdvancedTechnicianCertificate
+:AdvancedTechnicianCertificate rdf:type owl:Class ;
+                               rdfs:subClassOf :ShortStudies ;
+                               rdfs:label "Advanced Technician Certificate"@en ;
+                               rdfs:seeAlso "https://en.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur"@en .
+
+
+###  http://erpi.fr/educonto/AgricultureAgronomyEnvironmentAtc
+:AgricultureAgronomyEnvironmentAtc rdf:type owl:Class ;
+                                   rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/AgricultureAgronomyEnvironmentVocational
+:AgricultureAgronomyEnvironmentVocational rdf:type owl:Class ;
+                                          rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/ArtAudiovisualDesignAtc
+:ArtAudiovisualDesignAtc rdf:type owl:Class ;
+                         rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/ArtAudiovisualDesignGeneralBachelor
+:ArtAudiovisualDesignGeneralBachelor rdf:type owl:Class ;
+                                     rdfs:subClassOf :GeneralBachelor .
+
+
+###  http://erpi.fr/educonto/ArtAudiovisualDesignSchool
+:ArtAudiovisualDesignSchool rdf:type owl:Class ;
+                            rdfs:subClassOf :School .
+
+
+###  http://erpi.fr/educonto/ArtAudiovisualDesignVocational
+:ArtAudiovisualDesignVocational rdf:type owl:Class ;
+                                rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/AutomationConstructionMechanicAtc
+:AutomationConstructionMechanicAtc rdf:type owl:Class ;
+                                   rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/AutomationConstructionMechanicVocational
+:AutomationConstructionMechanicVocational rdf:type owl:Class ;
+                                          rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/Bachelor
+:Bachelor rdf:type owl:Class ;
+          rdfs:subClassOf :LongStudies ;
+          rdfs:label "Bachelor's Degree"@en ;
+          rdfs:seeAlso "https://en.wikipedia.org/wiki/Bachelor%27s_degree"@en .
+
+
+###  http://erpi.fr/educonto/BiologyChemistryAtc
+:BiologyChemistryAtc rdf:type owl:Class ;
+                     rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/BiologyChemistryTechnologicalBachelor
+:BiologyChemistryTechnologicalBachelor rdf:type owl:Class ;
+                                       rdfs:subClassOf :Industry .
+
+
+###  http://erpi.fr/educonto/BiologyChemistryVocational
+:BiologyChemistryVocational rdf:type owl:Class ;
+                            rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/BusinessEconomyManagementAtc
+:BusinessEconomyManagementAtc rdf:type owl:Class ;
+                              rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/BusinessEconomyManagementCpge
+:BusinessEconomyManagementCpge rdf:type owl:Class ;
+                               rdfs:subClassOf :Cpge ;
+                               rdfs:seeAlso "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Economics_CPGE"@en .
+
+
+###  http://erpi.fr/educonto/BusinessEconomyManagementGeneralBachelor
+:BusinessEconomyManagementGeneralBachelor rdf:type owl:Class ;
+                                          rdfs:subClassOf :GeneralBachelor .
+
+
+###  http://erpi.fr/educonto/BusinessEconomyManagementSchool
+:BusinessEconomyManagementSchool rdf:type owl:Class ;
+                                 rdfs:subClassOf :School .
+
+
+###  http://erpi.fr/educonto/BusinessEconomyManagementTechnologicalBachelor
+:BusinessEconomyManagementTechnologicalBachelor rdf:type owl:Class ;
+                                                rdfs:subClassOf :Tertiary .
+
+
+###  http://erpi.fr/educonto/BusinessEconomyManagementVocational
+:BusinessEconomyManagementVocational rdf:type owl:Class ;
+                                     rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/CateringHospitalityTourismAtc
+:CateringHospitalityTourismAtc rdf:type owl:Class ;
+                               rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/CateringHospitalityTourismVocational
+:CateringHospitalityTourismVocational rdf:type owl:Class ;
+                                      rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/ComputerScienceAtc
+:ComputerScienceAtc rdf:type owl:Class ;
+                    rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/ComputerScienceMathematicsGeneralBachelor
+:ComputerScienceMathematicsGeneralBachelor rdf:type owl:Class ;
+                                           rdfs:subClassOf :SciencesGeneralBachelor .
+
+
+###  http://erpi.fr/educonto/ComputerScienceTechnologicalBachelor
+:ComputerScienceTechnologicalBachelor rdf:type owl:Class ;
+                                      rdfs:subClassOf :Industry .
+
+
+###  http://erpi.fr/educonto/ComputerScienceVocational
+:ComputerScienceVocational rdf:type owl:Class ;
+                           rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/Cpge
+:Cpge rdf:type owl:Class ;
+      rdfs:subClassOf :PreparatoryClass ;
+      rdfs:label "Higher School Preparatory Classes"@en ;
+      rdfs:seeAlso "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles"@en .
+
+
+###  http://erpi.fr/educonto/Curriculum
+:Curriculum rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing ;
+            rdfs:label "University Curriculum"@en .
+
+
+###  http://erpi.fr/educonto/DualBachelor
+:DualBachelor rdf:type owl:Class ;
+              rdfs:subClassOf :Bachelor ;
+              rdfs:label "Dual Bachelor's Degree"@en ;
+              rdfs:seeAlso "https://en.wikipedia.org/wiki/Double_degree"@en .
+
+
+###  http://erpi.fr/educonto/EngineeringAtc
+:EngineeringAtc rdf:type owl:Class ;
+                rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/EngineeringGeneralBachelor
+:EngineeringGeneralBachelor rdf:type owl:Class ;
+                            rdfs:subClassOf :SciencesGeneralBachelor .
+
+
+###  http://erpi.fr/educonto/EngineeringScienceCpge
+:EngineeringScienceCpge rdf:type owl:Class ;
+                        rdfs:subClassOf :Cpge ;
+                        rdfs:seeAlso "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE"@en .
+
+
+###  http://erpi.fr/educonto/EngineeringScienceSchool
+:EngineeringScienceSchool rdf:type owl:Class ;
+                          rdfs:subClassOf :School .
+
+
+###  http://erpi.fr/educonto/EngineeringTechnologicalBachelor
+:EngineeringTechnologicalBachelor rdf:type owl:Class ;
+                                  rdfs:subClassOf :Industry .
+
+
+###  http://erpi.fr/educonto/EngineeringVocational
+:EngineeringVocational rdf:type owl:Class ;
+                       rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/FieldOfStudy
+:FieldOfStudy rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ;
+              rdfs:label "Field of Study"@en .
+
+
+###  http://erpi.fr/educonto/GeneralBachelor
+:GeneralBachelor rdf:type owl:Class ;
+                 rdfs:subClassOf :Bachelor ;
+                 rdfs:label "General Bachelor's Degree"@en ;
+                 rdfs:seeAlso "https://en.wikipedia.org/wiki/Bachelor%27s_degree"@en .
+
+
+###  http://erpi.fr/educonto/GeneralMajor
+:GeneralMajor rdf:type owl:Class ;
+              rdfs:subClassOf :HighSchoolMajor ;
+              rdfs:comment "Chosen major for general high school seniors. Can be either of the following options: a broad subject area (economics, literature or sciences), or a combination of two high school specialty among thirteen possibilities"@en ;
+              rdfs:label "General Major"@en ;
+              rdfs:seeAlso "https://en.wikipedia.org/wiki/Baccalaur%C3%A9at#Baccalaur%C3%A9at_g%C3%A9n%C3%A9ral"@en .
+
+
+###  http://erpi.fr/educonto/HealthGeneralBachelor
+:HealthGeneralBachelor rdf:type owl:Class ;
+                       rdfs:subClassOf :SciencesGeneralBachelor .
+
+
+###  http://erpi.fr/educonto/HighSchoolMajor
+:HighSchoolMajor rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing ;
+                 rdfs:comment "Chosen major in high school"@en ;
+                 rdfs:label "High school Major"@en .
+
+
+###  http://erpi.fr/educonto/HighSchoolSenior
+:HighSchoolSenior rdf:type owl:Class ;
+                  rdfs:subClassOf :Person ;
+                  rdfs:comment "Student in last year of high school"@en ;
+                  rdfs:label "High School Senior"@en .
+
+
+###  http://erpi.fr/educonto/HighSchoolSpecialty
+:HighSchoolSpecialty rdf:type owl:Class ;
+                     rdfs:subClassOf owl:Thing ;
+                     rdfs:label "High school Specialty"@en ;
+                     rdfs:seeAlso "https://fr.wikipedia.org/wiki/Enseignement_de_sp%C3%A9cialit%C3%A9" .
+
+
+###  http://erpi.fr/educonto/HumanitiesCpge
+:HumanitiesCpge rdf:type owl:Class ;
+                rdfs:subClassOf :Cpge ;
+                rdfs:seeAlso "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Literary_and_humanities_CPGE"@en .
+
+
+###  http://erpi.fr/educonto/HumanitiesGeneralBachelor
+:HumanitiesGeneralBachelor rdf:type owl:Class ;
+                           rdfs:subClassOf :GeneralBachelor .
+
+
+###  http://erpi.fr/educonto/HumanitiesVocational
+:HumanitiesVocational rdf:type owl:Class ;
+                      rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/Industry
+:Industry rdf:type owl:Class ;
+          rdfs:subClassOf :TechnologicalBachelor .
+
+
+###  http://erpi.fr/educonto/InformationCommunicationSchool
+:InformationCommunicationSchool rdf:type owl:Class ;
+                                rdfs:subClassOf :School .
+
+
+###  http://erpi.fr/educonto/IntegratedPreparatoryClass
+:IntegratedPreparatoryClass rdf:type owl:Class ;
+                            rdfs:subClassOf :PreparatoryClass ;
+                            rdfs:label "Integrated Preparatory Classes"@en ;
+                            rdfs:seeAlso "https://ecpm.unistra.fr/en/academics/integrated-preparatory-cycle/"@en ,
+                                         "https://polytech-nancy.univ-lorraine.fr/en/programmes/2-year-preparatory-cycle"@en .
+
+
+###  http://erpi.fr/educonto/Keyword
+:Keyword rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing ;
+         rdfs:comment "Can be linked to student and seen as a center of interest. Can be linked to university curricula and high school majors and be seen as a descriptive feature"@en ;
+         rdfs:label "Keyword"@en .
+
+
+###  http://erpi.fr/educonto/LawPoliticsGeneralBachelor
+:LawPoliticsGeneralBachelor rdf:type owl:Class ;
+                            rdfs:subClassOf :GeneralBachelor .
+
+
+###  http://erpi.fr/educonto/LawPoliticsTechnologicalBachelor
+:LawPoliticsTechnologicalBachelor rdf:type owl:Class ;
+                                  rdfs:subClassOf :Tertiary .
+
+
+###  http://erpi.fr/educonto/LawPoliticsVocational
+:LawPoliticsVocational rdf:type owl:Class ;
+                       rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/LongStudies
+:LongStudies rdf:type owl:Class ;
+             rdfs:subClassOf :Curriculum ;
+             rdfs:comment "Includes university curricula leading to long-term studies"@en ;
+             rdfs:label "Long Studies"@en .
+
+
+###  http://erpi.fr/educonto/NaturalScienceGeneralBachelor
+:NaturalScienceGeneralBachelor rdf:type owl:Class ;
+                               rdfs:subClassOf :SciencesGeneralBachelor .
+
+
+###  http://erpi.fr/educonto/ParamedicalSchool
+:ParamedicalSchool rdf:type owl:Class ;
+                   rdfs:subClassOf :School .
+
+
+###  http://erpi.fr/educonto/ParamedicalSocialAtc
+:ParamedicalSocialAtc rdf:type owl:Class ;
+                      rdfs:subClassOf :AdvancedTechnicianCertificate .
+
+
+###  http://erpi.fr/educonto/ParamedicalSocialVocational
+:ParamedicalSocialVocational rdf:type owl:Class ;
+                             rdfs:subClassOf :VocationalBachelor .
+
+
+###  http://erpi.fr/educonto/ParamedicalTechnologicalBachelor
+:ParamedicalTechnologicalBachelor rdf:type owl:Class ;
+                                  rdfs:subClassOf :Tertiary .
+
+
+###  http://erpi.fr/educonto/Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        rdfs:label "Person"@en .
+
+
+###  http://erpi.fr/educonto/PersonalityTrait
+:PersonalityTrait rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing ;
+                  rdfs:comment "Personality trait a student possesses"@en ;
+                  rdfs:label "Personality Trait"@en .
+
+
+###  http://erpi.fr/educonto/PreparatoryClass
+:PreparatoryClass rdf:type owl:Class ;
+                  rdfs:subClassOf :LongStudies ;
+                  rdfs:label "Preparatory Classes"@en .
+
+
+###  http://erpi.fr/educonto/School
+:School rdf:type owl:Class ;
+        rdfs:subClassOf :LongStudies ;
+        rdfs:comment "Higher education schools that are not part of university. Mainly includes private institutions"@en ;
+        rdfs:label "Higher Education School"@en .
+
+
+###  http://erpi.fr/educonto/SchoolSubject
+:SchoolSubject rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
+               rdfs:comment "School subject taught at school"@en ;
+               rdfs:label "School Subject"@en .
+
+
+###  http://erpi.fr/educonto/SciencesGeneralBachelor
+:SciencesGeneralBachelor rdf:type owl:Class ;
+                         rdfs:subClassOf :GeneralBachelor .
+
+
+###  http://erpi.fr/educonto/ShortStudies
+:ShortStudies rdf:type owl:Class ;
+              rdfs:subClassOf :Curriculum ;
+              rdfs:comment "Includes university curricula leading to short-term studies"@en ;
+              rdfs:label "Short Studies"@en .
+
+
+###  http://erpi.fr/educonto/TechnologicalBachelor
+:TechnologicalBachelor rdf:type owl:Class ;
+                       rdfs:subClassOf :Bachelor ;
+                       rdfs:label "Technological Bachelor's Degree"@en ;
+                       rdfs:seeAlso "https://en.wikipedia.org/wiki/University_Institutes_of_Technology"@en .
+
+
+###  http://erpi.fr/educonto/TechnologicalMajor
+:TechnologicalMajor rdf:type owl:Class ;
+                    rdfs:subClassOf :HighSchoolMajor ;
+                    rdfs:label "Technological Major"@en ;
+                    rdfs:seeAlso "https://en.wikipedia.org/wiki/Baccalaur%C3%A9at_technologique#The_8_current_sections"@en .
+
+
+###  http://erpi.fr/educonto/TechnologyCpge
+:TechnologyCpge rdf:type owl:Class ;
+                rdfs:subClassOf :Cpge ;
+                rdfs:seeAlso "https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE"@en .
+
+
+###  http://erpi.fr/educonto/Tertiary
+:Tertiary rdf:type owl:Class ;
+          rdfs:subClassOf :TechnologicalBachelor .
+
+
+###  http://erpi.fr/educonto/UndergraduateStudent
+:UndergraduateStudent rdf:type owl:Class ;
+                      rdfs:subClassOf :Person ;
+                      rdfs:label "Undergraduate Student"@en .
+
+
+###  http://erpi.fr/educonto/VocationalBachelor
+:VocationalBachelor rdf:type owl:Class ;
+                    rdfs:subClassOf :ShortStudies ;
+                    rdfs:label "Vocational Bachelor's Degree"@en ;
+                    rdfs:seeAlso "https://en.wikipedia.org/wiki/Vocational_university"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
