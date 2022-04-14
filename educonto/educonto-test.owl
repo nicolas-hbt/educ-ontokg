@@ -16,7 +16,7 @@
         <dc:creator>Nicolas Hubert, ERPI, LORIA, University of Lorraine, France</dc:creator>
         <dc:language>English</dc:language>
         <dc:license>Licensed under the Apache License, Version 2.0</dc:license>
-        <rdfs:comment>An ontology for modelling higher education curricula and students&apos; profiles</rdfs:comment>
+        <rdfs:comment>An ontology for modelling higher education curricula and students; profiles</rdfs:comment>
         <rdfs:label xml:lang="en">EducOnto: an Ontology for Education</rdfs:label>
     </owl:Ontology>
     
