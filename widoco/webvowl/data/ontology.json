@@ -1,0 +1,1875 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://erpi.fr/educonto/onto" ],
+    "iri" : "http://erpi.fr/educonto/onto/",
+    "author" : [ "Nicolas Hubert, ERPI, LORIA, University of Lorraine, France" ],
+    "labels" : {
+      "en" : "EducOnto: an Ontology for Higher Education"
+    },
+    "comments" : {
+      "undefined" : "An ontology for modelling higher education curricula and students' profiles"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Nicolas Hubert, ERPI, LORIA, University of Lorraine, France",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2022-03-05",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "English",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://erpi.fr/educonto/onto/TechnologicalBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologicalBachelor"
+    },
+    "subClasses" : [ "12", "13" ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/HealthGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HealthGeneralBachelor"
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/LongStudies",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LongStudies"
+    },
+    "subClasses" : [ "18", "19", "11" ],
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/AutomationConstructionMechanicAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutomationConstructionMechanicAtc"
+    },
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/InformationCommunicationSchool",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationCommunicationSchool"
+    },
+    "id" : "25",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BusinessEconomyManagementSchool",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessEconomyManagementSchool"
+    },
+    "id" : "28",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ParamedicalSocialAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParamedicalSocialAtc"
+    },
+    "id" : "29",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BusinessEconomyManagementTechnologicalBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessEconomyManagementTechnologicalBachelor"
+    },
+    "id" : "34",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/DualBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DualBachelor"
+    },
+    "id" : "68",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/NaturalScienceGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NaturalScienceGeneralBachelor"
+    },
+    "id" : "73",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/AcademicSkill",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcademicSkill"
+    },
+    "id" : "80"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ShortStudies",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShortStudies"
+    },
+    "subClasses" : [ "21", "2" ],
+    "id" : "81",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ParamedicalSocialVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParamedicalSocialVocational"
+    },
+    "id" : "31",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/HumanitiesVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HumanitiesVocational"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/Cpge",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cpge"
+    },
+    "subClasses" : [ "83", "84", "85", "86" ],
+    "id" : "82",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/EngineeringAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EngineeringAtc"
+    },
+    "id" : "87",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/AdvancedTechnicianCertificate",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdvancedTechnicianCertificate"
+    },
+    "subClasses" : [ "92", "87", "29", "93", "94", "91", "89", "20", "75" ],
+    "id" : "21",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/VocationalBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VocationalBachelor"
+    },
+    "subClasses" : [ "72", "79", "77", "64", "61", "70", "67", "33", "31", "1", "97" ],
+    "id" : "2",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/Curriculum",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Curriculum",
+      "undefined" : "Curriculum"
+    },
+    "subClasses" : [ "81", "16" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ComputerScienceVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComputerScienceVocational"
+    },
+    "id" : "61",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ArtAudiovisualDesignVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArtAudiovisualDesignVocational"
+    },
+    "id" : "70",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BusinessEconomyManagementGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessEconomyManagementGeneralBachelor"
+    },
+    "id" : "112",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/Person",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "subClasses" : [ "23", "113" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ArtAudiovisualDesignAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArtAudiovisualDesignAtc"
+    },
+    "id" : "93",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/AutomationConstructionMechanicVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutomationConstructionMechanicVocational"
+    },
+    "id" : "33",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ComputerScienceTechnologicalBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComputerScienceTechnologicalBachelor"
+    },
+    "id" : "127",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/Keyword",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Keyword",
+      "undefined" : "Keyword"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/IntegratedPreparatoryClass",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntegratedPreparatoryClass"
+    },
+    "id" : "131",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BiologyChemistryAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BiologyChemistryAtc"
+    },
+    "id" : "92",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/HighSchoolMajor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighSchoolMajor",
+      "undefined" : "High school major"
+    },
+    "subClasses" : [ "62", "9" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ComputerScienceAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComputerScienceAtc"
+    },
+    "id" : "75",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/SchoolSubject",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SchoolSubject",
+      "undefined" : "School subject"
+    },
+    "id" : "65"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/EngineeringVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EngineeringVocational"
+    },
+    "id" : "79",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/EngineeringGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EngineeringGeneralBachelor"
+    },
+    "id" : "142",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/AgricultureAgronomyEnvironmentVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AgricultureAgronomyEnvironmentVocational"
+    },
+    "id" : "77",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/PreparatoryClass",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreparatoryClass"
+    },
+    "subClasses" : [ "131", "82" ],
+    "id" : "19",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BiologyChemistryVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BiologyChemistryVocational"
+    },
+    "id" : "67",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/Industry",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Industry"
+    },
+    "subClasses" : [ "127", "129", "123" ],
+    "id" : "13",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/TechnologicalMajor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Baccalaur%C3%A9at_technologique",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TechnologicalMajor",
+      "undefined" : "Technological major"
+    },
+    "id" : "9",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/Tertiary",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tertiary"
+    },
+    "subClasses" : [ "121", "34", "125" ],
+    "id" : "12",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BusinessEconomyManagementVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessEconomyManagementVocational"
+    },
+    "id" : "64",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/EngineeringScienceSchool",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EngineeringScienceSchool"
+    },
+    "id" : "115",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/AgricultureAgronomyEnvironmentAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AgricultureAgronomyEnvironmentAtc"
+    },
+    "id" : "89",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/LawPoliticsTechnologicalBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LawPoliticsTechnologicalBachelor"
+    },
+    "id" : "125",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ComputerScienceMathematicsGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComputerScienceMathematicsGeneralBachelor"
+    },
+    "id" : "146",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ArtAudiovisualDesignGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArtAudiovisualDesignGeneralBachelor"
+    },
+    "id" : "109",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/School",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "School"
+    },
+    "subClasses" : [ "28", "115", "119", "25", "106" ],
+    "id" : "18",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/LawPoliticsGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LawPoliticsGeneralBachelor"
+    },
+    "id" : "151",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/HighSchoolStudent",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighSchoolStudent"
+    },
+    "id" : "113",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BusinessEconomyManagementCpge",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessEconomyManagementCpge"
+    },
+    "id" : "84",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/CateringHospitalityTourismVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CateringHospitalityTourismVocational"
+    },
+    "id" : "72",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/CateringHospitalityTourismAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CateringHospitalityTourismAtc"
+    },
+    "id" : "94",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ParamedicalSchool",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParamedicalSchool"
+    },
+    "id" : "119",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/HighSchoolSpecialty",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://fr.wikipedia.org/wiki/Enseignement_de_sp%C3%A9cialit%C3%A9",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighSchoolSpecialty",
+      "undefined" : "High school specialty"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/GeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeneralBachelor"
+    },
+    "subClasses" : [ "112", "109", "153", "15", "151" ],
+    "id" : "110",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BiologyChemistryTechnologicalBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BiologyChemistryTechnologicalBachelor"
+    },
+    "id" : "129",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "35",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/BusinessEconomyManagementAtc",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessEconomyManagementAtc"
+    },
+    "id" : "91",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ArtAudiovisualDesignSchool",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArtAudiovisualDesignSchool"
+    },
+    "id" : "106",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/LawPoliticsVocational",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LawPoliticsVocational"
+    },
+    "id" : "97",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/Bachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bachelor"
+    },
+    "subClasses" : [ "10", "68", "110" ],
+    "id" : "11",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/ParamedicalTechnologicalBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParamedicalTechnologicalBachelor"
+    },
+    "id" : "121",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/HumanitiesCpge",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HumanitiesCpge"
+    },
+    "id" : "85",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/UndergraduateStudent",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UndergraduateStudent"
+    },
+    "id" : "23",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/EngineeringTechnologicalBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EngineeringTechnologicalBachelor"
+    },
+    "id" : "123",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/SciencesGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SciencesGeneralBachelor"
+    },
+    "subClasses" : [ "142", "14", "73", "146" ],
+    "id" : "15",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/PersonalityTrait",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PersonalityTrait"
+    },
+    "id" : "133"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/TechnologyCpge",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologyCpge"
+    },
+    "id" : "83",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/GeneralMajor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Baccalaur%C3%A9at",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeneralMajor",
+      "undefined" : "General major"
+    },
+    "id" : "62",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/HumanitiesGeneralBachelor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HumanitiesGeneralBachelor"
+    },
+    "id" : "153",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/FieldOfStudy",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldOfStudy",
+      "undefined" : "Field of study"
+    },
+    "id" : "107"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/EngineeringScienceCpge",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EngineeringScienceCpge"
+    },
+    "id" : "86",
+    "superClasses" : [ "82" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/specialtyRelatesToKeyword",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "specialtyRelatesToKeyword"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/dislikedTechnologicalMajor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "dislikedTechnologicalMajor"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/likedCurriculum",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "likedCurriculum"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/followedCurriculum",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "followedCurriculum"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "23",
+    "subproperty" : [ "27", "22" ],
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "range" : "2",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "2",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "35",
+    "subproperty" : [ "36", "37", "38", "39", "7", "3", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "26", "57", "58", "59" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "2",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/pickedSpecialtyPair",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "pickedSpecialtyPair"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "range" : "2",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/hasFavoriteSchoolSubject",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasFavoriteSchoolSubject"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "range" : "2",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "2",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "2",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "21",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "2",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "2",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "21",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "21",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/mentionedCurriculum",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "mentionedCurriculum"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "subproperty" : [ "24" ],
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "21",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "21",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "21",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "21",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "82",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "21",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "82",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/recommendsHighSchoolMajor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "recommendsHighSchoolMajor"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "range" : "18",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/belongsToFieldOfStudy",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "belongsToFieldOfStudy"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "range" : "110",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "110",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/keywordRelatesToSubject",
+    "inverse" : "49",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "keywordRelatesToSubject"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/recommendsHighSchoolSpecialty",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "recommendsHighSchoolSpecialty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/likedTechnologicalMajor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "likedTechnologicalMajor"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "range" : "18",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "18",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "18",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "18",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "12",
+    "domain" : "121",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "13",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "12",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "12",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "13",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "13",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/keywordRelatesToFieldOfStudy",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "keywordRelatesToFieldOfStudy"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/majorRelatesToKeyword",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "majorRelatesToKeyword"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "104",
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "range" : "19",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/likedHighSchoolSpecialty",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "likedHighSchoolSpecialty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/hasPersonalityTrait",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "hasPersonalityTrait"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "range" : "104",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "8",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "19",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "104",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "17",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/hasSkill",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasSkill"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "range" : "2",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "8",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/dislikedHighSchoolSpecialty",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "dislikedHighSchoolSpecialty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/curriculumRelatesToKeyword",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "curriculumRelatesToKeyword"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/requiresHighSchoolSpecialty",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "requiresHighSchoolSpecialty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/dislikedCurriculum",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "dislikedCurriculum"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/subjectRelatesToKeyword",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "subjectRelatesToKeyword"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "65",
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "range" : "15",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "15",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/specialtyRelatesToFieldOfStudy",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "specialtyRelatesToFieldOfStudy"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/majorRelatesToFieldOfStudy",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "majorRelatesToFieldOfStudy"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "104",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/isInterestedInKeyword",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isInterestedInKeyword"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "range" : "11",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "11",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "15",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "110",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "110",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "110",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/subjectRelatesToFieldOfStudy",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "subjectRelatesToFieldOfStudy"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "65",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "range" : "10",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "16",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "16",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "16",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/requiresHighSchoolMajor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "requiresHighSchoolMajor"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/pickedGeneralMajor",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "pickedGeneralMajor"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "range" : "81",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "81",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "82",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "82",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/hasMainTopic",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasMainTopic"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "104",
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://erpi.fr/educonto/onto/specialtyPairContains",
+    "baseIri" : "http://erpi.fr/educonto/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "specialtyPairContains"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "62",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  } ]
+}
