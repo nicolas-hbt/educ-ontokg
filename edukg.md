@@ -79,7 +79,7 @@ title: EduKG
     <tr>
         <td>5,452</td>
         <td>27</td>
-        <td>41,631</td>
+        <td>36,301</td>
     </tr>
 </table>
 
