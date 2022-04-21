@@ -9,7 +9,7 @@ title: Download
 <h2 id="download">Download</h2>
   
   <p><strong>EducOnto</strong> can be downloaded in .owl format at the following link: <a href="../educonto/educonto.owl" download>educonto.owl</a></p>
-  <p><strong>EduKG</strong> can be downloaded in .ttl format at the following link: <a href="../edukg/edukg.ttl" download>edukg.ttl</a>. Alternatively, we provide a .txt file version here: <a href="../edukg/edukg_triplets.txt" download>edukg.txt</a></p>
+  <p><strong>EduKG</strong> can be downloaded in .ttl format at the following link: <a href="../edukg/edukg.ttl" download>edukg.ttl</a>. Alternatively, we provide a .txt file version here: <a href="../edukg/edukg.txt" download>edukg.txt</a></p>
 
   <h4>Tools Used for Development</h4>
   <p>Tools we used throughout the building processes of EducOnto and EduKG are available at the following links: </p>
