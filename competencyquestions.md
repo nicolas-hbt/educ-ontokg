@@ -16,9 +16,9 @@ title: Competency Questions
 
 <strong>SPARQL Query</strong> <br/>
 <pre>
-PREFIX ed: <http://erpi.fr/educonto/>
-PREFIX major: <http://erpi.fr/edukg/major/>
-PREFIX curriculum: <http://erpi.fr/edukg/curriculum/>
+PREFIX ed: <http://purl.org/educonto/>
+PREFIX major: <http://purl.org/edukg/major/>
+PREFIX curriculum: <http://purl.org/edukg/curriculum/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT ?major 
@@ -54,8 +54,8 @@ WHERE {
 
 <strong>SPARQL Query</strong> <br/>
 <pre>
-PREFIX ed: <http://erpi.fr/educonto/>
-PREFIX major: <http://erpi.fr/edukg/major/>
+PREFIX ed: <http://purl.org/educonto/>
+PREFIX major: <http://purl.org/edukg/major/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT ?curriculum (COUNT(?curriculum) AS ?count)
@@ -114,8 +114,8 @@ LIMIT 5
 
 <strong>SPARQL Query</strong> <br/>
 <pre>
-PREFIX ed: <http://erpi.fr/educonto/>
-PREFIX student: <http://erpi.fr/edukg/stud/>
+PREFIX ed: <http://purl.org/educonto/>
+PREFIX student: <http://purl.org/edukg/stud/>
 
 SELECT ?curriculum (COUNT(?keyword) AS ?commonKeywords)
 WHERE {
@@ -173,8 +173,8 @@ ORDER BY DESC(?commonKeywords)
 
 <strong>SPARQL Query</strong> <br/>
 <pre>
-PREFIX ed: <http://erpi.fr/educonto/>
-PREFIX student: <http://erpi.fr/edukg/stud/>
+PREFIX ed: <http://purl.org/educonto/>
+PREFIX student: <http://purl.org/edukg/stud/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT ?alternative
@@ -211,8 +211,8 @@ WHERE {
 
 <strong>SPARQL Query</strong> <br/>
 <pre>
-PREFIX ed: <http://erpi.fr/educonto/>
-PREFIX student: <http://erpi.fr/edukg/stud/>
+PREFIX ed: <http://purl.org/educonto/>
+PREFIX student: <http://purl.org/edukg/stud/>
 
 SELECT ?alternative (COUNT(?keyword) AS ?commonKeywords)
 WHERE {
@@ -269,8 +269,8 @@ ORDER BY DESC(?commonKeywords)
 
 <strong>SPARQL Query</strong> <br/>
 <pre>
-PREFIX ed: <http://erpi.fr/educonto/>
-PREFIX student: <http://erpi.fr/edukg/stud/>
+PREFIX ed: <http://purl.org/educonto/>
+PREFIX student: <http://purl.org/edukg/stud/>
 
 SELECT ?alternative
 WHERE {
@@ -321,8 +321,8 @@ GROUP BY ?alternative
 
 <strong>SPARQL Query</strong> <br/>
 <pre>
-PREFIX ed: <http://erpi.fr/educonto/>
-PREFIX curriculum: <http://erpi.fr/edukg/curriculum/>
+PREFIX ed: <http://purl.org/educonto/>
+PREFIX curriculum: <http://purl.org/edukg/curriculum/>
 
 SELECT ?keywordOrSubject ?preferredKeywordOrSubject
 WHERE
