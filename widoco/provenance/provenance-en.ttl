@@ -2,13 +2,15 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<https://purl.org/educonto> a prov:Entity;
+<http://purl.org/educonto/1.0.0> a prov:Entity;
 	 dc:title "EducOnto: an Ontology for Education";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://purl.org/educonto/>;
+	 prov:wasGeneratedAt "23/04/2022";
 .
 :agent0 a prov:Agent; foaf:name "Nicolas Hubert, ERPI, LORIA, University of Lorraine, France".
 :agent1 a prov:Agent; foaf:name "Armelle Brun, LORIA, University of Lorraine, France".

@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://erpi.fr/educonto/"
-     xml:base="http://erpi.fr/educonto/"
+<rdf:RDF xmlns="http://purl.org/educonto/"
+     xml:base="http://purl.org/educonto/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://erpi.fr/educonto/">
-        <owl:versionIRI rdf:resource="http://erpi.fr/educonto/1.0.0"/>
+    <owl:Ontology rdf:about="http://purl.org/educonto/">
+        <owl:versionIRI rdf:resource="http://purl.org/educonto/1.0.0"/>
         <dc:contributor>Armelle Brun, LORIA, University of Lorraine, France</dc:contributor>
         <dc:contributor>Davy Monticolo, ERPI, University of Lorraine, France</dc:contributor>
         <dc:contributor>Pierre Monnin, Orange, France</dc:contributor>
@@ -92,324 +92,324 @@
     
 
 
-    <!-- http://erpi.fr/educonto/belongsToFieldOfStudy -->
+    <!-- http://purl.org/educonto/belongsToFieldOfStudy -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/belongsToFieldOfStudy">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/belongsToFieldOfStudy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Curriculum"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/FieldOfStudy"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Curriculum"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/FieldOfStudy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/curriculumRelatesToKeyword -->
+    <!-- http://purl.org/educonto/curriculumRelatesToKeyword -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/curriculumRelatesToKeyword">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/curriculumRelatesToKeyword">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Curriculum"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Keyword"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Curriculum"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Keyword"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/dislikedCurriculum -->
+    <!-- http://purl.org/educonto/dislikedCurriculum -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/dislikedCurriculum">
-        <rdfs:subPropertyOf rdf:resource="http://erpi.fr/educonto/followedCurriculum"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/UndergraduateStudent"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Curriculum"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/dislikedCurriculum">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/educonto/followedCurriculum"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/UndergraduateStudent"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Curriculum"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/dislikedHighSchoolSpecialty -->
+    <!-- http://purl.org/educonto/dislikedHighSchoolSpecialty -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/dislikedHighSchoolSpecialty">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/dislikedHighSchoolSpecialty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/HighSchoolSpecialty"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/HighSchoolSpecialty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/dislikedTechnologicalMajor -->
+    <!-- http://purl.org/educonto/dislikedTechnologicalMajor -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/dislikedTechnologicalMajor">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/dislikedTechnologicalMajor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/TechnologicalMajor"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/TechnologicalMajor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/followedCurriculum -->
+    <!-- http://purl.org/educonto/followedCurriculum -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/followedCurriculum">
-        <rdfs:subPropertyOf rdf:resource="http://erpi.fr/educonto/mentionedCurriculum"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/UndergraduateStudent"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Curriculum"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/followedCurriculum">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/educonto/mentionedCurriculum"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/UndergraduateStudent"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Curriculum"/>
         <rdfs:comment xml:lang="en">University curriculum a student is following or has followed recently</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/hasFavoriteSchoolSubject -->
+    <!-- http://purl.org/educonto/hasFavoriteSchoolSubject -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/hasFavoriteSchoolSubject">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/hasFavoriteSchoolSubject">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/SchoolSubject"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/SchoolSubject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/hasMainTopic -->
+    <!-- http://purl.org/educonto/hasMainTopic -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/hasMainTopic">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/hasMainTopic">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/HighSchoolMajor"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/SchoolSubject"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/HighSchoolMajor"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/SchoolSubject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/hasPersonalityTrait -->
+    <!-- http://purl.org/educonto/hasPersonalityTrait -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/hasPersonalityTrait">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/hasPersonalityTrait">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/PersonalityTrait"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/PersonalityTrait"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/hasSkill -->
+    <!-- http://purl.org/educonto/hasSkill -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/hasSkill">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/hasSkill">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/AcademicSkill"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/AcademicSkill"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/isInterestedInKeyword -->
+    <!-- http://purl.org/educonto/isInterestedInKeyword -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/isInterestedInKeyword">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/isInterestedInKeyword">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Keyword"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Keyword"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/keywordRelatesToFieldOfStudy -->
+    <!-- http://purl.org/educonto/keywordRelatesToFieldOfStudy -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/keywordRelatesToFieldOfStudy">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/keywordRelatesToFieldOfStudy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Keyword"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/FieldOfStudy"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Keyword"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/FieldOfStudy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/keywordRelatesToSubject -->
+    <!-- http://purl.org/educonto/keywordRelatesToSubject -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/keywordRelatesToSubject">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/keywordRelatesToSubject">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://erpi.fr/educonto/subjectRelatesToKeyword"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Keyword"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/SchoolSubject"/>
+        <owl:inverseOf rdf:resource="http://purl.org/educonto/subjectRelatesToKeyword"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Keyword"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/SchoolSubject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/likedCurriculum -->
+    <!-- http://purl.org/educonto/likedCurriculum -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/likedCurriculum">
-        <rdfs:subPropertyOf rdf:resource="http://erpi.fr/educonto/followedCurriculum"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/UndergraduateStudent"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Curriculum"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/likedCurriculum">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/educonto/followedCurriculum"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/UndergraduateStudent"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Curriculum"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/likedHighSchoolSpecialty -->
+    <!-- http://purl.org/educonto/likedHighSchoolSpecialty -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/likedHighSchoolSpecialty">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/likedHighSchoolSpecialty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/HighSchoolSpecialty"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/HighSchoolSpecialty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/likedTechnologicalMajor -->
+    <!-- http://purl.org/educonto/likedTechnologicalMajor -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/likedTechnologicalMajor">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/likedTechnologicalMajor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/TechnologicalMajor"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/TechnologicalMajor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/majorRelatesToFieldOfStudy -->
+    <!-- http://purl.org/educonto/majorRelatesToFieldOfStudy -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/majorRelatesToFieldOfStudy">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/majorRelatesToFieldOfStudy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/HighSchoolMajor"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/FieldOfStudy"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/HighSchoolMajor"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/FieldOfStudy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/majorRelatesToKeyword -->
+    <!-- http://purl.org/educonto/majorRelatesToKeyword -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/majorRelatesToKeyword">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/majorRelatesToKeyword">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/HighSchoolMajor"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Keyword"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/HighSchoolMajor"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Keyword"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/mentionedCurriculum -->
+    <!-- http://purl.org/educonto/mentionedCurriculum -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/mentionedCurriculum">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/mentionedCurriculum">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Curriculum"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Curriculum"/>
         <rdfs:comment xml:lang="en">Curriculum mentioned by a student as an alternative or as a possible choice for future studies</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/pickedGeneralMajor -->
+    <!-- http://purl.org/educonto/pickedGeneralMajor -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/pickedGeneralMajor">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/pickedGeneralMajor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Person"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/GeneralMajor"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/GeneralMajor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/recommendsHighSchoolMajor -->
+    <!-- http://purl.org/educonto/recommendsHighSchoolMajor -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/recommendsHighSchoolMajor">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/recommendsHighSchoolMajor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Curriculum"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/HighSchoolMajor"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Curriculum"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/HighSchoolMajor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/recommendsHighSchoolSpecialty -->
+    <!-- http://purl.org/educonto/recommendsHighSchoolSpecialty -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/recommendsHighSchoolSpecialty">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/recommendsHighSchoolSpecialty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Curriculum"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/HighSchoolSpecialty"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Curriculum"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/HighSchoolSpecialty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/requiresHighSchoolMajor -->
+    <!-- http://purl.org/educonto/requiresHighSchoolMajor -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/requiresHighSchoolMajor">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/requiresHighSchoolMajor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Curriculum"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/HighSchoolMajor"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Curriculum"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/HighSchoolMajor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/requiresHighSchoolSpecialty -->
+    <!-- http://purl.org/educonto/requiresHighSchoolSpecialty -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/requiresHighSchoolSpecialty">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/requiresHighSchoolSpecialty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/Curriculum"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/HighSchoolSpecialty"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/Curriculum"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/HighSchoolSpecialty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/specialtyPairContains -->
+    <!-- http://purl.org/educonto/specialtyPairContains -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/specialtyPairContains">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/specialtyPairContains">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/GeneralMajor"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/HighSchoolSpecialty"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/GeneralMajor"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/HighSchoolSpecialty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/specialtyRelatesToFieldOfStudy -->
+    <!-- http://purl.org/educonto/specialtyRelatesToFieldOfStudy -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/specialtyRelatesToFieldOfStudy">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/specialtyRelatesToFieldOfStudy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/HighSchoolSpecialty"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/FieldOfStudy"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/HighSchoolSpecialty"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/FieldOfStudy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/specialtyRelatesToKeyword -->
+    <!-- http://purl.org/educonto/specialtyRelatesToKeyword -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/specialtyRelatesToKeyword">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/specialtyRelatesToKeyword">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/HighSchoolSpecialty"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Keyword"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/HighSchoolSpecialty"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Keyword"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/subjectRelatesToFieldOfStudy -->
+    <!-- http://purl.org/educonto/subjectRelatesToFieldOfStudy -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/subjectRelatesToFieldOfStudy">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/subjectRelatesToFieldOfStudy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/SchoolSubject"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/FieldOfStudy"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/SchoolSubject"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/FieldOfStudy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://erpi.fr/educonto/subjectRelatesToKeyword -->
+    <!-- http://purl.org/educonto/subjectRelatesToKeyword -->
 
 
-    <owl:ObjectProperty rdf:about="http://erpi.fr/educonto/subjectRelatesToKeyword">
+    <owl:ObjectProperty rdf:about="http://purl.org/educonto/subjectRelatesToKeyword">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://erpi.fr/educonto/SchoolSubject"/>
-        <rdfs:range rdf:resource="http://erpi.fr/educonto/Keyword"/>
+        <rdfs:domain rdf:resource="http://purl.org/educonto/SchoolSubject"/>
+        <rdfs:range rdf:resource="http://purl.org/educonto/Keyword"/>
     </owl:ObjectProperty>
     
 
@@ -426,10 +426,10 @@
     
 
 
-    <!-- http://erpi.fr/educonto/AcademicSkill -->
+    <!-- http://purl.org/educonto/AcademicSkill -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/AcademicSkill">
+    <owl:Class rdf:about="http://purl.org/educonto/AcademicSkill">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">Skills that a student possesses</rdfs:comment>
         <rdfs:label xml:lang="en">Academic Skill</rdfs:label>
@@ -437,349 +437,349 @@
     
 
 
-    <!-- http://erpi.fr/educonto/AdvancedTechnicianCertificate -->
+    <!-- http://purl.org/educonto/AdvancedTechnicianCertificate -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/AdvancedTechnicianCertificate">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/ShortStudies"/>
+    <owl:Class rdf:about="http://purl.org/educonto/AdvancedTechnicianCertificate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/ShortStudies"/>
         <rdfs:label xml:lang="en">Advanced Technician Certificate</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/AgricultureAgronomyEnvironmentAtc -->
+    <!-- http://purl.org/educonto/AgricultureAgronomyEnvironmentAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/AgricultureAgronomyEnvironmentAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/AgricultureAgronomyEnvironmentAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/AgricultureAgronomyEnvironmentVocational -->
+    <!-- http://purl.org/educonto/AgricultureAgronomyEnvironmentVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/AgricultureAgronomyEnvironmentVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/AgricultureAgronomyEnvironmentVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ArtAudiovisualDesignAtc -->
+    <!-- http://purl.org/educonto/ArtAudiovisualDesignAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ArtAudiovisualDesignAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ArtAudiovisualDesignAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ArtAudiovisualDesignGeneralBachelor -->
+    <!-- http://purl.org/educonto/ArtAudiovisualDesignGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ArtAudiovisualDesignGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/GeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ArtAudiovisualDesignGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/GeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ArtAudiovisualDesignSchool -->
+    <!-- http://purl.org/educonto/ArtAudiovisualDesignSchool -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ArtAudiovisualDesignSchool">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/School"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ArtAudiovisualDesignSchool">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/School"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ArtAudiovisualDesignVocational -->
+    <!-- http://purl.org/educonto/ArtAudiovisualDesignVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ArtAudiovisualDesignVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ArtAudiovisualDesignVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/AutomationConstructionMechanicAtc -->
+    <!-- http://purl.org/educonto/AutomationConstructionMechanicAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/AutomationConstructionMechanicAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/AutomationConstructionMechanicAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/AutomationConstructionMechanicVocational -->
+    <!-- http://purl.org/educonto/AutomationConstructionMechanicVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/AutomationConstructionMechanicVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/AutomationConstructionMechanicVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/Bachelor -->
+    <!-- http://purl.org/educonto/Bachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/Bachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/LongStudies"/>
+    <owl:Class rdf:about="http://purl.org/educonto/Bachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/LongStudies"/>
         <rdfs:label xml:lang="en">Bachelor&apos;s Degree</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Bachelor%27s_degree</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BiologyChemistryAtc -->
+    <!-- http://purl.org/educonto/BiologyChemistryAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BiologyChemistryAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BiologyChemistryAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BiologyChemistryTechnologicalBachelor -->
+    <!-- http://purl.org/educonto/BiologyChemistryTechnologicalBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BiologyChemistryTechnologicalBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Industry"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BiologyChemistryTechnologicalBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Industry"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BiologyChemistryVocational -->
+    <!-- http://purl.org/educonto/BiologyChemistryVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BiologyChemistryVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BiologyChemistryVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BusinessEconomyManagementAtc -->
+    <!-- http://purl.org/educonto/BusinessEconomyManagementAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BusinessEconomyManagementAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BusinessEconomyManagementAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BusinessEconomyManagementCpge -->
+    <!-- http://purl.org/educonto/BusinessEconomyManagementCpge -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BusinessEconomyManagementCpge">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Cpge"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BusinessEconomyManagementCpge">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Cpge"/>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Economics_CPGE</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BusinessEconomyManagementGeneralBachelor -->
+    <!-- http://purl.org/educonto/BusinessEconomyManagementGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BusinessEconomyManagementGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/GeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BusinessEconomyManagementGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/GeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BusinessEconomyManagementSchool -->
+    <!-- http://purl.org/educonto/BusinessEconomyManagementSchool -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BusinessEconomyManagementSchool">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/School"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BusinessEconomyManagementSchool">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/School"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BusinessEconomyManagementTechnologicalBachelor -->
+    <!-- http://purl.org/educonto/BusinessEconomyManagementTechnologicalBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BusinessEconomyManagementTechnologicalBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Tertiary"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BusinessEconomyManagementTechnologicalBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Tertiary"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/BusinessEconomyManagementVocational -->
+    <!-- http://purl.org/educonto/BusinessEconomyManagementVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/BusinessEconomyManagementVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/BusinessEconomyManagementVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/CateringHospitalityTourismAtc -->
+    <!-- http://purl.org/educonto/CateringHospitalityTourismAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/CateringHospitalityTourismAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/CateringHospitalityTourismAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/CateringHospitalityTourismVocational -->
+    <!-- http://purl.org/educonto/CateringHospitalityTourismVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/CateringHospitalityTourismVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/CateringHospitalityTourismVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ComputerScienceAtc -->
+    <!-- http://purl.org/educonto/ComputerScienceAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ComputerScienceAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ComputerScienceAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ComputerScienceMathematicsGeneralBachelor -->
+    <!-- http://purl.org/educonto/ComputerScienceMathematicsGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ComputerScienceMathematicsGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/SciencesGeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ComputerScienceMathematicsGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/SciencesGeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ComputerScienceTechnologicalBachelor -->
+    <!-- http://purl.org/educonto/ComputerScienceTechnologicalBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ComputerScienceTechnologicalBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Industry"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ComputerScienceTechnologicalBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Industry"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ComputerScienceVocational -->
+    <!-- http://purl.org/educonto/ComputerScienceVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ComputerScienceVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ComputerScienceVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/Cpge -->
+    <!-- http://purl.org/educonto/Cpge -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/Cpge">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/PreparatoryClass"/>
+    <owl:Class rdf:about="http://purl.org/educonto/Cpge">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/PreparatoryClass"/>
         <rdfs:label xml:lang="en">Higher School Preparatory Classes</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/Curriculum -->
+    <!-- http://purl.org/educonto/Curriculum -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/Curriculum">
+    <owl:Class rdf:about="http://purl.org/educonto/Curriculum">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">University Curriculum</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/DualBachelor -->
+    <!-- http://purl.org/educonto/DualBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/DualBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Bachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/DualBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Bachelor"/>
         <rdfs:label xml:lang="en">Dual Bachelor&apos;s Degree</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Double_degree</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/EngineeringAtc -->
+    <!-- http://purl.org/educonto/EngineeringAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/EngineeringAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/EngineeringAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/EngineeringGeneralBachelor -->
+    <!-- http://purl.org/educonto/EngineeringGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/EngineeringGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/SciencesGeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/EngineeringGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/SciencesGeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/EngineeringScienceCpge -->
+    <!-- http://purl.org/educonto/EngineeringScienceCpge -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/EngineeringScienceCpge">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Cpge"/>
+    <owl:Class rdf:about="http://purl.org/educonto/EngineeringScienceCpge">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Cpge"/>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/EngineeringScienceSchool -->
+    <!-- http://purl.org/educonto/EngineeringScienceSchool -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/EngineeringScienceSchool">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/School"/>
+    <owl:Class rdf:about="http://purl.org/educonto/EngineeringScienceSchool">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/School"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/EngineeringTechnologicalBachelor -->
+    <!-- http://purl.org/educonto/EngineeringTechnologicalBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/EngineeringTechnologicalBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Industry"/>
+    <owl:Class rdf:about="http://purl.org/educonto/EngineeringTechnologicalBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Industry"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/EngineeringVocational -->
+    <!-- http://purl.org/educonto/EngineeringVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/EngineeringVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/EngineeringVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/FieldOfStudy -->
+    <!-- http://purl.org/educonto/FieldOfStudy -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/FieldOfStudy">
+    <owl:Class rdf:about="http://purl.org/educonto/FieldOfStudy">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">Field of Study</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/GeneralBachelor -->
+    <!-- http://purl.org/educonto/GeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/GeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Bachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/GeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Bachelor"/>
         <rdfs:label xml:lang="en">General Bachelor&apos;s Degree</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Bachelor%27s_degree</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/GeneralMajor -->
+    <!-- http://purl.org/educonto/GeneralMajor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/GeneralMajor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/HighSchoolMajor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/GeneralMajor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/HighSchoolMajor"/>
         <rdfs:comment xml:lang="en">Chosen major for general high school seniors. Can be either of the following options: a broad subject area (economics, literature or sciences), or a combination of two high school specialty among thirteen possibilities</rdfs:comment>
         <rdfs:label xml:lang="en">General Major</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Baccalaur%C3%A9at#Baccalaur%C3%A9at_g%C3%A9n%C3%A9ral</rdfs:seeAlso>
@@ -787,19 +787,19 @@
     
 
 
-    <!-- http://erpi.fr/educonto/HealthGeneralBachelor -->
+    <!-- http://purl.org/educonto/HealthGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/HealthGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/SciencesGeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/HealthGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/SciencesGeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/HighSchoolMajor -->
+    <!-- http://purl.org/educonto/HighSchoolMajor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/HighSchoolMajor">
+    <owl:Class rdf:about="http://purl.org/educonto/HighSchoolMajor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">Chosen major in high school</rdfs:comment>
         <rdfs:label xml:lang="en">High school Major</rdfs:label>
@@ -807,21 +807,21 @@
     
 
 
-    <!-- http://erpi.fr/educonto/HighSchoolSenior -->
+    <!-- http://purl.org/educonto/HighSchoolSenior -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/HighSchoolSenior">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Person"/>
+    <owl:Class rdf:about="http://purl.org/educonto/HighSchoolSenior">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Person"/>
         <rdfs:comment xml:lang="en">Student in last year of high school</rdfs:comment>
         <rdfs:label xml:lang="en">High School Senior</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/HighSchoolSpecialty -->
+    <!-- http://purl.org/educonto/HighSchoolSpecialty -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/HighSchoolSpecialty">
+    <owl:Class rdf:about="http://purl.org/educonto/HighSchoolSpecialty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">High school Specialty</rdfs:label>
         <rdfs:seeAlso>https://fr.wikipedia.org/wiki/Enseignement_de_sp%C3%A9cialit%C3%A9</rdfs:seeAlso>
@@ -829,57 +829,57 @@
     
 
 
-    <!-- http://erpi.fr/educonto/HumanitiesCpge -->
+    <!-- http://purl.org/educonto/HumanitiesCpge -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/HumanitiesCpge">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Cpge"/>
+    <owl:Class rdf:about="http://purl.org/educonto/HumanitiesCpge">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Cpge"/>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Literary_and_humanities_CPGE</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/HumanitiesGeneralBachelor -->
+    <!-- http://purl.org/educonto/HumanitiesGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/HumanitiesGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/GeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/HumanitiesGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/GeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/HumanitiesVocational -->
+    <!-- http://purl.org/educonto/HumanitiesVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/HumanitiesVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/HumanitiesVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/Industry -->
+    <!-- http://purl.org/educonto/Industry -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/Industry">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/TechnologicalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/Industry">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/TechnologicalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/InformationCommunicationSchool -->
+    <!-- http://purl.org/educonto/InformationCommunicationSchool -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/InformationCommunicationSchool">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/School"/>
+    <owl:Class rdf:about="http://purl.org/educonto/InformationCommunicationSchool">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/School"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/IntegratedPreparatoryClass -->
+    <!-- http://purl.org/educonto/IntegratedPreparatoryClass -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/IntegratedPreparatoryClass">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/PreparatoryClass"/>
+    <owl:Class rdf:about="http://purl.org/educonto/IntegratedPreparatoryClass">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/PreparatoryClass"/>
         <rdfs:label xml:lang="en">Integrated Preparatory Classes</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://ecpm.unistra.fr/en/academics/integrated-preparatory-cycle/</rdfs:seeAlso>
         <rdfs:seeAlso xml:lang="en">https://polytech-nancy.univ-lorraine.fr/en/programmes/2-year-preparatory-cycle</rdfs:seeAlso>
@@ -887,10 +887,10 @@
     
 
 
-    <!-- http://erpi.fr/educonto/Keyword -->
+    <!-- http://purl.org/educonto/Keyword -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/Keyword">
+    <owl:Class rdf:about="http://purl.org/educonto/Keyword">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">Can be linked to student and seen as a center of interest. Can be linked to university curricula and high school majors and be seen as a descriptive feature</rdfs:comment>
         <rdfs:label xml:lang="en">Keyword</rdfs:label>
@@ -898,103 +898,103 @@
     
 
 
-    <!-- http://erpi.fr/educonto/LawPoliticsGeneralBachelor -->
+    <!-- http://purl.org/educonto/LawPoliticsGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/LawPoliticsGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/GeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/LawPoliticsGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/GeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/LawPoliticsTechnologicalBachelor -->
+    <!-- http://purl.org/educonto/LawPoliticsTechnologicalBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/LawPoliticsTechnologicalBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Tertiary"/>
+    <owl:Class rdf:about="http://purl.org/educonto/LawPoliticsTechnologicalBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Tertiary"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/LawPoliticsVocational -->
+    <!-- http://purl.org/educonto/LawPoliticsVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/LawPoliticsVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/LawPoliticsVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/LongStudies -->
+    <!-- http://purl.org/educonto/LongStudies -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/LongStudies">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Curriculum"/>
+    <owl:Class rdf:about="http://purl.org/educonto/LongStudies">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Curriculum"/>
         <rdfs:comment xml:lang="en">Includes university curricula leading to long-term studies</rdfs:comment>
         <rdfs:label xml:lang="en">Long Studies</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/NaturalScienceGeneralBachelor -->
+    <!-- http://purl.org/educonto/NaturalScienceGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/NaturalScienceGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/SciencesGeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/NaturalScienceGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/SciencesGeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ParamedicalSchool -->
+    <!-- http://purl.org/educonto/ParamedicalSchool -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ParamedicalSchool">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/School"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ParamedicalSchool">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/School"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ParamedicalSocialAtc -->
+    <!-- http://purl.org/educonto/ParamedicalSocialAtc -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ParamedicalSocialAtc">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/AdvancedTechnicianCertificate"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ParamedicalSocialAtc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/AdvancedTechnicianCertificate"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ParamedicalSocialVocational -->
+    <!-- http://purl.org/educonto/ParamedicalSocialVocational -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ParamedicalSocialVocational">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/VocationalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ParamedicalSocialVocational">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/VocationalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ParamedicalTechnologicalBachelor -->
+    <!-- http://purl.org/educonto/ParamedicalTechnologicalBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ParamedicalTechnologicalBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Tertiary"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ParamedicalTechnologicalBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Tertiary"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/Person -->
+    <!-- http://purl.org/educonto/Person -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/Person">
+    <owl:Class rdf:about="http://purl.org/educonto/Person">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/PersonalityTrait -->
+    <!-- http://purl.org/educonto/PersonalityTrait -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/PersonalityTrait">
+    <owl:Class rdf:about="http://purl.org/educonto/PersonalityTrait">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">Personality trait a student possesses</rdfs:comment>
         <rdfs:label xml:lang="en">Personality Trait</rdfs:label>
@@ -1002,31 +1002,31 @@
     
 
 
-    <!-- http://erpi.fr/educonto/PreparatoryClass -->
+    <!-- http://purl.org/educonto/PreparatoryClass -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/PreparatoryClass">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/LongStudies"/>
+    <owl:Class rdf:about="http://purl.org/educonto/PreparatoryClass">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/LongStudies"/>
         <rdfs:label xml:lang="en">Preparatory Classes</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/School -->
+    <!-- http://purl.org/educonto/School -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/School">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/LongStudies"/>
+    <owl:Class rdf:about="http://purl.org/educonto/School">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/LongStudies"/>
         <rdfs:comment xml:lang="en">Higher education schools that are not part of university. Mainly includes private institutions</rdfs:comment>
         <rdfs:label xml:lang="en">Higher Education School</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/SchoolSubject -->
+    <!-- http://purl.org/educonto/SchoolSubject -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/SchoolSubject">
+    <owl:Class rdf:about="http://purl.org/educonto/SchoolSubject">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">School subject taught at school</rdfs:comment>
         <rdfs:label xml:lang="en">School Subject</rdfs:label>
@@ -1034,82 +1034,82 @@
     
 
 
-    <!-- http://erpi.fr/educonto/SciencesGeneralBachelor -->
+    <!-- http://purl.org/educonto/SciencesGeneralBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/SciencesGeneralBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/GeneralBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/SciencesGeneralBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/GeneralBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/ShortStudies -->
+    <!-- http://purl.org/educonto/ShortStudies -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/ShortStudies">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Curriculum"/>
+    <owl:Class rdf:about="http://purl.org/educonto/ShortStudies">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Curriculum"/>
         <rdfs:comment xml:lang="en">Includes university curricula leading to short-term studies</rdfs:comment>
         <rdfs:label xml:lang="en">Short Studies</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/TechnologicalBachelor -->
+    <!-- http://purl.org/educonto/TechnologicalBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/TechnologicalBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Bachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/TechnologicalBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Bachelor"/>
         <rdfs:label xml:lang="en">Technological Bachelor&apos;s Degree</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/University_Institutes_of_Technology</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/TechnologicalMajor -->
+    <!-- http://purl.org/educonto/TechnologicalMajor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/TechnologicalMajor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/HighSchoolMajor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/TechnologicalMajor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/HighSchoolMajor"/>
         <rdfs:label xml:lang="en">Technological Major</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Baccalaur%C3%A9at_technologique#The_8_current_sections</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/TechnologyCpge -->
+    <!-- http://purl.org/educonto/TechnologyCpge -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/TechnologyCpge">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Cpge"/>
+    <owl:Class rdf:about="http://purl.org/educonto/TechnologyCpge">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Cpge"/>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/Tertiary -->
+    <!-- http://purl.org/educonto/Tertiary -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/Tertiary">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/TechnologicalBachelor"/>
+    <owl:Class rdf:about="http://purl.org/educonto/Tertiary">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/TechnologicalBachelor"/>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/UndergraduateStudent -->
+    <!-- http://purl.org/educonto/UndergraduateStudent -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/UndergraduateStudent">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/Person"/>
+    <owl:Class rdf:about="http://purl.org/educonto/UndergraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/Person"/>
         <rdfs:label xml:lang="en">Undergraduate Student</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://erpi.fr/educonto/VocationalBachelor -->
+    <!-- http://purl.org/educonto/VocationalBachelor -->
 
 
-    <owl:Class rdf:about="http://erpi.fr/educonto/VocationalBachelor">
-        <rdfs:subClassOf rdf:resource="http://erpi.fr/educonto/ShortStudies"/>
+    <owl:Class rdf:about="http://purl.org/educonto/VocationalBachelor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/educonto/ShortStudies"/>
         <rdfs:label xml:lang="en">Vocational Bachelor&apos;s Degree</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Vocational_university</rdfs:seeAlso>
     </owl:Class>
