@@ -3,7 +3,7 @@ layout: default
 title: EduKG
 ---
 
-[Introduction](#introduction) | [Description](#description) | [Statistics](#statistics) | [Download](#download) 
+[Introduction](#introduction) | [Use Cases](#usecases) | [Statistics](#statistics) | [Download](#download) 
 
 <article class="mb-5" id="edukg">
 <content>
@@ -11,9 +11,11 @@ title: EduKG
     
 <h2 id="introduction">Introduction</h2>
 <p>Recently, the use of Knowledge Graphs (KGs) has met with great success for a wide range of use cases. In particular, KGs are increasingly used to improve the explainability of machine learning models. Unfortunately, there is a lack of suitable educational KGs. Therefore, we intend to contribute to the development and provision of a new educational KG, subsequently referred to as EduKG. EduKG is a knowledge graph instantiated with students' data and a broad spectrum of curricula. EduKG is built on the basis of <a href="{{site.baseurl}}educonto">EducOnto</a>, from which it inherits the rich semantics and structural constraints.</p>
-    
+
+  <!--
 <h2 id="description">Description</h2>
 
+  
 <h4 id="modelling">Modelling choices</h4>
 
 <p>Education is a highly complex domain. To model its own intricacies, we designed <a href="{{site.baseurl}}educonto">EducOnto</a> that gives a conceptual overview of the field of application. EduKG can be seen as an instantiation of EducOnto. Consequently, to fully understand the data some clarifications must be made:
@@ -23,9 +25,9 @@ title: EduKG
   <li>...</li>
   <li>...</li>
 </ul>
-  
+ !-->
     
-<h4 id="usecases">Use Cases</h4>
+<h2 id="usecases">Use Cases</h2>
 <p>EduKG was built with a very clear use case in mind: making (explainable) university curriculum recommendations. Considering that EducOnto underpins EduKG by providing it with a rich semantics, EduKG is particularly well suited for conducting research at the crossroads of Explainable Artificial Intelligence (XAI) and recommender systems (RSs). However, EduKG contains a wide spectrum of information and remains generic enough to be used in a wide range of downstream tasks.</p>
     
 <h2 id="statistics">Dataset Statistics</h2>
