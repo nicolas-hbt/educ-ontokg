@@ -36,49 +36,49 @@ In this subsection, we give a deeper insight into EducOnto. In particular, we gi
 </thead>
 <tbody>
   <tr>
-    <td>AcademicSkill</td>
+    <td>educonto:AcademicSkill</td>
     <td>Skill that a student possesses</td>
-    <td><i>good memory</i></td>
+    <td><i>&lthttp://purl.org/edukg/good_memory&gt</i></td>
   </tr>
   <tr>
-    <td>Curriculum</td>
+    <td>educonto:Curriculum</td>
     <td>University curriculum</td>
-    <td><i>Bachelor's Degree - Mathematics</i></td>
+    <td><i>&lthttp://purl.org/edukg/curriculum/lg_psycho&gt</i></td>
   </tr>
   <tr>
-    <td>FieldOfStudy</td>
+    <td>educonto:FieldOfStudy</td>
     <td>Field of Study</td>
-    <td><i>engineering</i></td>
+    <td><i>&lthttp://purl.org/edukg/engineering&gt</i></td>
   </tr>
   <tr>
-    <td>HighSchoolMajor</td>
+    <td>educonto:HighSchoolMajor</td>
     <td>Chosen major in high school</td>
-    <td><i>scientific track</i></td>
+    <td><i>&lthttp://purl.org/edukg/major/ts&gt</i></td>
   </tr>
     <tr>
-    <td>HighSchoolSpecialty</td>
+    <td>educonto:HighSchoolSpecialty</td>
     <td>Chosen specialty in high school</td>
-    <td><i>mathematics</i></td>
+    <td><i>&lthttp://purl.org/edukg/spe/arts&gt</i></td>
   </tr>
       <tr>
-    <td>Keyword</td>
+    <td>educonto:Keyword</td>
     <td>Can be linked to student and seen as a center of interest. Can be linked to university curricula and high school majors and be seen as a descriptive feature</td>
-    <td><i>aeronautics</i></td>
+    <td><i>&lthttp://purl.org/edukg/healthcare&gt</i></td>
   </tr>
       <tr>
-    <td>Person</td>
+    <td>educonto:Person</td>
     <td>High school senior or Undergraduate student</td>
-    <td><i>user1077</i></td>
+    <td><i>&lthttp://purl.org/edukg/stud/user999&gt</i></td>
   </tr>
         <tr>
-    <td>PersonalityTrait</td>
+    <td>educonto:PersonalityTrait</td>
     <td>Personality trait a student possesses</td>
-    <td><i>investigative</i></td>
+    <td><i>&lthttp://purl.org/edukg/investigative&gt</i></td>
   </tr>
         <tr>
-    <td>SchoolSubject</td>
+    <td>educonto:SchoolSubject</td>
     <td>School subject taught at school</td>
-    <td><i>physics</i></td>
+    <td><i>&lthttp://purl.org/edukg/chemistry&gt</i></td>
   </tr>
   
 </tbody>
@@ -96,29 +96,29 @@ Below are some of the 30 object properties of EducOnto. For clarity, we do not i
 </thead>
 <tbody>
   <tr>
-    <td>belongsToFieldOfStudy</td>
-    <td>Curriculum</td>
-    <td>FieldOfStudy</td>
+    <td>educonto:belongsToFieldOfStudy</td>
+    <td>educonto:Curriculum</td>
+    <td>educonto:FieldOfStudy</td>
   </tr>
    <tr>
-    <td>hasFavoriteSchoolSubject</td>
-    <td>Person</td>
-    <td>SchoolSubject</td>
+    <td>educonto:hasFavoriteSchoolSubject</td>
+    <td>educonto:Person</td>
+    <td>educonto:SchoolSubject</td>
   </tr>
     <tr>
-    <td>hasMainTopic</td>
-    <td>HighSchoolMajor</td>
-    <td>SchoolSubject</td>
+    <td>educonto:hasMainTopic</td>
+    <td>educonto:HighSchoolMajor</td>
+    <td>educonto:SchoolSubject</td>
   </tr>
   <tr>
-    <td>hasSkill</td>
-    <td>Person</td>
-    <td>AcademicSkill</td>
+    <td>educonto:hasSkill</td>
+    <td>educonto:Person</td>
+    <td>educonto:AcademicSkill</td>
   </tr>
   <tr>
-    <td>isInterestedInKeyword</td>
-    <td>Person</td>
-    <td>Keyword</td>
+    <td>educonto:isInterestedInKeyword</td>
+    <td>educonto:Person</td>
+    <td>educonto:Keyword</td>
   </tr>
     <tr>
     <td>...</td>
@@ -126,34 +126,34 @@ Below are some of the 30 object properties of EducOnto. For clarity, we do not i
     <td>...</td>
   </tr>
    <tr>
-    <td>mentionedCurriculum</td>
-    <td>Person</td>
-    <td>Curriculum</td>
+    <td>educonto:mentionedCurriculum</td>
+    <td>educonto:Person</td>
+    <td>educonto:Curriculum</td>
   </tr>
     <tr>
-    <td>pickedGeneralMajor</td>
-    <td>Person</td>
-    <td>GeneralMajor</td>
+    <td>educonto:pickedGeneralMajor</td>
+    <td>educonto:Person</td>
+    <td>educonto:GeneralMajor</td>
   </tr>
       <tr>
-    <td>recommendsHighSchoolMajor</td>
-    <td>Curriculum</td>
-    <td>HighSchoolMajor</td>
+    <td>educonto:recommendsHighSchoolMajor</td>
+    <td>educonto:Curriculum</td>
+    <td>educonto:HighSchoolMajor</td>
   </tr>
       <tr>
-    <td>recommendsHighSchoolSpecialty</td>
-    <td>Curriculum</td>
-    <td>HighSchoolSpecialty</td>
+    <td>educonto:recommendsHighSchoolSpecialty</td>
+    <td>educonto:Curriculum</td>
+    <td>educonto:HighSchoolSpecialty</td>
   </tr>
       <tr>
-    <td>requiresHighSchoolMajor</td>
-    <td>Curriculum</td>
-    <td>HighSchoolMajor</td>
+    <td>educonto:requiresHighSchoolMajor</td>
+    <td>educonto:Curriculum</td>
+    <td>educonto:HighSchoolMajor</td>
   </tr>
       <tr>
-    <td>requiresHighSchoolSpecialty</td>
-    <td>Curriculum</td>
-    <td>HighSchoolSpecialty</td>
+    <td>educonto:requiresHighSchoolSpecialty</td>
+    <td>educonto:Curriculum</td>
+    <td>educonto:HighSchoolSpecialty</td>
   </tr>
 </tbody>
 </table>
