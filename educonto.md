@@ -25,7 +25,67 @@ title: EducOnto
 <h2 id="description">Description</h2>
   
 In this subsection, we give a deeper insight into EducOnto. In particular, we give the reader a better understanding of how the different classes and properties have been designed, what they stand for and what their interactions are. Below are the main classes of EducOnto and what they stand for:
+<!-- Bad rendering of < and > signs on the website; this is a backup version
+      <table>
+<thead>
+  <tr>
+    <th>Class</th>
+    <th>Description</th>
+    <th>Example of Instance</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>educonto:AcademicSkill</td>
+    <td>Skill that a student possesses</td>
+    <td><i>http://purl.org/edukg/good_memory</i></td>
+  </tr>
+  <tr>
+    <td>educonto:Curriculum</td>
+    <td>University curriculum</td>
+    <td><i>http://purl.org/edukg/curriculum/lg_psycho</i></td>
+  </tr>
+  <tr>
+    <td>educonto:FieldOfStudy</td>
+    <td>Field of Study</td>
+    <td><i>http://purl.org/edukg/engineering</i></td>
+  </tr>
+  <tr>
+    <td>educonto:HighSchoolMajor</td>
+    <td>Chosen major in high school</td>
+    <td><i>http://purl.org/edukg/major/ts</i></td>
+  </tr>
+    <tr>
+    <td>educonto:HighSchoolSpecialty</td>
+    <td>Chosen specialty in high school</td>
+    <td><i>http://purl.org/edukg/spe/arts</i></td>
+  </tr>
+      <tr>
+    <td>educonto:Keyword</td>
+    <td>Can be linked to student and seen as a center of interest. Can be linked to university curricula and high school majors and be seen as a descriptive feature</td>
+    <td><i>http://purl.org/edukg/healthcare</i></td>
+  </tr>
+      <tr>
+    <td>educonto:Person</td>
+    <td>High school senior or Undergraduate student</td>
+    <td><i>http://purl.org/edukg/stud/user999</i></td>
+  </tr>
+        <tr>
+    <td>educonto:PersonalityTrait</td>
+    <td>Personality trait a student possesses</td>
+    <td><i>http://purl.org/edukg/investigative</i></td>
+  </tr>
+        <tr>
+    <td>educonto:SchoolSubject</td>
+    <td>School subject taught at school</td>
+    <td><i>http://purl.org/edukg/chemistry</i></td>
+  </tr>
   
+</tbody>
+</table>
+-->  
+
+
   <table>
 <thead>
   <tr>
@@ -83,6 +143,8 @@ In this subsection, we give a deeper insight into EducOnto. In particular, we gi
   
 </tbody>
 </table>
+-->
+ 
 
 Below are some of the 30 object properties of EducOnto. For clarity, we do not include the object properties whose meaning and domain-range pair are obvious.
 
