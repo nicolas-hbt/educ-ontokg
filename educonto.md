@@ -143,7 +143,6 @@ In this subsection, we give a deeper insight into EducOnto. In particular, we gi
   
 </tbody>
 </table>
--->
  
 
 Below are some of the 30 object properties of EducOnto. For clarity, we do not include the object properties whose meaning and domain-range pair are obvious.
