@@ -86,6 +86,6 @@ title: EduKG
 </table>
 
 <h2 id="download">Download</h2>
-    <p><strong>EduKG</strong> can be downloaded in .ttl format at the following link: <a href="../edukg/edukg.ttl" download>edukg.ttl</a>. Alternatively, we provide a .txt file version here: <a href="../edukg/edukg_triplets.txt" download>edukg.txt</a></p>
+    <p><strong>EduKG</strong> can be downloaded in .ttl format at the following link: <a href="../edukg/edukg.ttl" download>edukg.ttl</a>.</p>
     
 </content>
