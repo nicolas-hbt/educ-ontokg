@@ -12,8 +12,8 @@ url:              https://nicolas-hbt.github.io/educ-ontokg/
 baseurl:          https://nicolas-hbt.github.io/educ-ontokg/
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Nicolas Hubert'
+  url:            https://twitter.com/nicolas_hubr
 
 paginate:         5
 
@@ -24,4 +24,4 @@ github:
   repo:           https://github.com/nicolas-hbt/educ-ontokg
 
 # Google Analytics
-google_analytics: G-LC085ZEKPS
+google_analytics: UA-234703790-1
