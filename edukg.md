@@ -9,8 +9,6 @@ title: EduKG
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnicolas-hbt.github.io%2Feduc-ontokg%2Fedukg%2F&count_bg=%233DA7C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fnicolas-hbt%2Feduc-ontokg%2Fmaster%2Fedukg%2Fedukg.ttl&count_bg=%233DA7C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false)](https://hits.seeyoufarm.com)
-
 <article class="mb-5" id="edukg">
 <content>
   <h1 id="edukgpage">EduKG: An <span style="color: #6a9fb5">Edu</span>cational <span style="color: #6a9fb5">K</span>nowledge <span style="color: #6a9fb5">G</span>raph</h1>
