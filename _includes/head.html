@@ -36,4 +36,9 @@
     ga('create', 'UA-146052-15', 'getpoole.com');
     ga('send', 'pageview');
   </script>
+  
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
+  
 </head>
