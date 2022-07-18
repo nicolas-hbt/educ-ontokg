@@ -2,8 +2,12 @@
 layout: default
 title: EduKG
 ---
-
+            
 [Introduction](#introduction) | [Use Cases](#usecases) | [Statistics](#statistics) | [Download](#download) 
+
+<!-- [![Npm package total downloads](https://badgen.net/npm/dt/express)](https://raw.githubusercontent.com/nicolas-hbt/educ-ontokg/master/edukg/edukg.ttl) -->
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnicolas-hbt.github.io%2Feduc-ontokg%2Fedukg%2F&count_bg=%233DA7C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 <article class="mb-5" id="edukg">
 <content>
@@ -84,8 +88,8 @@ title: EduKG
         <td>36,301</td>
     </tr>
 </table>
-
+      
 <h2 id="download">Download</h2>
     <p><strong>EduKG</strong> can be downloaded in .ttl format at the following link: <a href="../edukg/edukg.ttl" download>edukg.ttl</a></p>
-    
+       
 </content>
