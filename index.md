@@ -6,6 +6,7 @@ description: An Ontology and a Knowledge Graph for Higher Education
 
 [Abstract](#abstract) | [FAIR Principles](#fair-principles) | [Directions](#directions)
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnicolas-hbt.github.io%2Feduc-ontokg%2Findex&count_bg=%233DA7C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 <h1 class="page-title" id="header">EducOnto and EduKG: An Ontology and a Knowledge Graph for Higher Education</h1>
 
