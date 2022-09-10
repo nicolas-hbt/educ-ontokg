@@ -27,8 +27,34 @@ description: An Ontology and a Knowledge Graph for Higher Education
 <article class="mb-5" id="abstract">
 <content>
 <h2>Abstract</h2>
-  <p>Education is a highly complex domain in which students must make their decisions carefully, especially when it comes to picking a university curriculum. To model the intricacies of the educational domain, ontologies have successfully been leveraged. Beyond this, education is a high stakes domain, too. In particular, the period ranging from the end of high school to the first years of university is a critical and defining moment in students’ academic paths as students’ choices may shape
-their future careers. However, no available ontologies or datasets relate to such a turning point in student’s lives. Considering the aforementioned gap in the community, the contribution of our work is twofold: firstly, we introduce EducOnto - an ontology that aims at modelling university curricula and students’ profiles and annotating them with clear semantics. The process of building EducOnto is thoroughly explained and we subsequently evaluate it using both human expertise and a task-based approach. Secondly, we introduce EduKG, a knowledge graph instantiated with students and a broad spectrum of curricula. EduKG is built on the basis of EducOnto, from which it inherits the rich semantics and structural constraints. EducOnto and EduKG can be used separately, and both of them are well documented and publicly available.</p>
+  <p>Education is a complex domain where students must make their curricula choices carefully. To model the intricacies of the educational domain,
+ontologies have successfully been leveraged in the past. However, no available ontology or dataset directly addresses the critical transition from high school to university from a decision-making perspective. Therefore, the contribution of our on-going work is twofold. Firstly, we introduce EducOnto -- an ontology that aims at modeling university curricula and students’ profiles. Secondly, we introduce EduKG -- a knowledge graph inheriting the semantics of EducOnto and instantiated with data about French students and curricula.</p>
+</content>
+ 
+<hr/>
+
+<article class="mb-5" id="citation">
+<content>
+<h2>Citing</h2>
+  <p>When citing, please use the following reference:
+
+Nicolas Hubert, Armelle Brun, Davy Monticolo. New Ontology and Knowledge Graph for University Curriculum Recommendation. ISWC 2022 - The 21st International Semantic Web Conference, Oct 2022, Hangzhou / Virtual, China.</p>
+
+```
+@inproceedings{hubertISWC2022,
+  TITLE = {{New Ontology and Knowledge Graph for University Curriculum Recommendation}},
+  AUTHOR = {Hubert, Nicolas and Brun, Armelle and Monticolo, Davy},
+  URL = {https://hal.archives-ouvertes.fr/hal-03768154},
+  BOOKTITLE = {{ISWC 2022 - The 21st International Semantic Web Conference}},
+  ADDRESS = {Hangzhou / Virtual, China},
+  YEAR = {2022},
+  MONTH = Oct,
+  KEYWORDS = {Knowledge Graph ; Education ; Ontology ; Recommender System},
+  PDF = {https://hal.archives-ouvertes.fr/hal-03768154/file/ISWC_Hubert.pdf},
+  HAL_ID = {hal-03768154},
+  HAL_VERSION = {v1},
+}
+```
 </content>
  
 <hr/>
