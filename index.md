@@ -11,7 +11,7 @@ description: An Ontology and a Knowledge Graph for Higher Education
 <h1 class="page-title" id="header">EducOnto and EduKG: An Ontology and a Knowledge Graph for Higher Education</h1>
 
 <h3 style="color:dimgrey;">Nicolas Hubert<sup>12</sup>, Armelle Brun<sup>2</sup>, Davy Monticolo<sup>1</sup></h3>
-<h3><a href="https://erpi.univ-lorraine.fr/"><sup>1</sup>ERPI, France</a> | <a href="https://www.loria.fr/en/"><sup>2</sup>University of Lorraine, CNRS, Loria, France</a></h3>
+<h3><a href="https://erpi.univ-lorraine.fr/"><sup>1</sup>Université de Lorraine, ERPI, France</a> | <a href="https://www.loria.fr/en/"><sup>2</sup>Université de Lorraine, CNRS, Loria, France</a></h3>
 
 <p class="message">EducOnto and EduKG are respectively an ontology and a knowledge graph rooted in the field of higher education. EducOnto aims at modelling students' profiles, curricula and other relevant concepts. EduKG is an instantiation of EducOnto with students' and curricula's information.</p>
 
